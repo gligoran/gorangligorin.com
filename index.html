@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Goran Gligorin</title>
+	<meta name="author" content="Goran Gligorin"><meta name="description" content="Goran Gligorin's little piece of the Internet">
+	
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/feed.xml" rel="alternate" title="Goran Gligorin" type="application/atom+xml">
+	
+    <link rel="canonical" href="https://www.gorangligorin.com/">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href="/favicon.ico" rel="shortcut icon">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
+
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/css/code.css" rel="stylesheet" type="text/css">
+</head>
+
+
+    <body class="frontpage">
+    <div class="container">
+        <div class="profilepic">
+        	
+        	<img src="/images/gorangligorin-2.png" alt="Profile Picture" />
+        	
+        </div>
+        <div>
+            <h1>Goran Gligorin</h1>
+            <h2>web developer, internet marketer, online entrepreneur, go-kart racer &amp; runner</h2>
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="/about">about me</a></li>
+                <li><a href="/cv/">cv</a></li>
+                <li><a href="/blog/">blog</a></li>
+                <li><a href="/contact">contact</a></li>
+            </ul>
+        </nav>
+        <nav id="sub-nav">
+    <div class="social">
+        
+            <a class="facebook" href="https://facebook.com/goran.gligorin" title="Facebook">Facebook</a>
+        
+        
+            <a class="github" href="https://github.com/gligoran" title="GitHub">GitHub</a>
+        
+        
+            <a class="twitter" href="https://twitter.com/gligoran" title="Twitter">Twitter</a>
+        
+        
+            <a class="linkedin" href="https://linkedin.com/in/gorangligorin" title="LinkedIn">LinkedIn</a>
+        
+        <a class="rss" href="/feed.xml" title="Subscribe">Subscribe</a>
+    </div>
+</nav>
+
+    </div>
+
+    <div class="overlay"></div>
+
+
+    
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9914927-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js"></script>
+
+<script id="dsq-count-scr" src="//gorangligorin.disqus.com/count.js" async></script>
+
+<script src="/js/links.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$(".fancybox")
+            .attr("rel", "gallery")
+            .fancybox({
+                padding: 0,
+                fitToView: true,
+                autoSize: true
+            });
+
+        $('.entry-content p:not(.gallery) img:not(.emoji)').each(function(i) {
+        	var alt = this.alt;
+        	var parent = $(this).parent();
+
+        	if (alt != '') {
+        		var element = $(this);
+        		if (parent.is('a')) {
+        			element = parent;
+        		}
+        		element.after('<span class="caption">'+alt+'</span>');
+        	}
+        });
+    });
+</script>
+
+</body>
+</html>

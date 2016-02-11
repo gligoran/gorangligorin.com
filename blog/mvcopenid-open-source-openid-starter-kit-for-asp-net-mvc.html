@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>MvcOpenID - Open Source OpenID Starter Kit for ASP.NET MVC - Goran Gligorin</title>
+	<meta name="author" content="Goran Gligorin"><meta name="description" content="Goran Gligorin's little piece of the Internet">
+	
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/feed.xml" rel="alternate" title="Goran Gligorin" type="application/atom+xml">
+	
+    <link rel="canonical" href="https://www.gorangligorin.com/blog/mvcopenid-open-source-openid-starter-kit-for-asp-net-mvc">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href="/favicon.ico" rel="shortcut icon">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
+
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/css/code.css" rel="stylesheet" type="text/css">
+</head>
+
+
+    <body>
+    <div class="container">
+        <div id="sidebar">
+            <header>
+    <div class="profilepic">
+    	
+    	<img src="/images/gorangligorin-2.png" alt="Profile Picture" />
+    	
+    </div>
+    <div>
+        <div class="title">Goran Gligorin</div>
+        <div class="subtitle">web developer, internet marketer, online entrepreneur, go-kart racer &amp; runner</div>
+    </div>
+</header>
+
+<div class="navi">
+    <nav id="main-nav">
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/about">about me</a></li>
+            <li><a href="/cv/">cv</a></li>
+            <li><a href="/blog/">blog</a></li>
+            <li><a href="/blog/archives">archives</a></li>
+            <li><a href="/contact">contact</a></li>
+        </ul>
+    </nav>
+    <nav id="sub-nav">
+    <div class="social">
+        
+            <a class="facebook" href="https://facebook.com/goran.gligorin" title="Facebook">Facebook</a>
+        
+        
+            <a class="github" href="https://github.com/gligoran" title="GitHub">GitHub</a>
+        
+        
+            <a class="twitter" href="https://twitter.com/gligoran" title="Twitter">Twitter</a>
+        
+        
+            <a class="linkedin" href="https://linkedin.com/in/gorangligorin" title="LinkedIn">LinkedIn</a>
+        
+        <a class="rss" href="/feed.xml" title="Subscribe">Subscribe</a>
+    </div>
+</nav>
+
+</div>
+
+<div class="overlay"></div>
+
+        </div>
+        <div id="main">
+            <div id="content" class="inner">
+                <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    
+	<h1 itemprop="name">MvcOpenID - Open Source OpenID Starter Kit for ASP.NET MVC</h1>
+	<div class="meta">
+	<span class="date">
+
+
+
+
+<time datetime="2010-11-25T00:00:00+00:00"  itemprop="datePublished">November 25, 2010</time></span>
+	<span class="tags">aspnet-mvc, openid</span>
+	
+		
+
+<span class="comments"><a href="#disqus_thread">comments</a></span>
+
+	
+</div>
+
+	<div class="entry-content" itemprop="articleBody"><p>Last week was quite a productive one for me. Pulling in about 4 to 5 productive hours a day as you can see from the graph below. I’m happy about that.</p>
+
+<p><a href="/images/mvcopenid-productivity.png" title="Productivity Week 3 November 2010" class="fancybox"><img src="/images/mvcopenid-productivity.png" alt="Productivity Week 3 November 2010" title="Productivity Week 3 November 2010" /></a></p>
+
+<p>So what was I up to, you might ask. Well I’ll tell you. I decided to publish my first open source project. It’s an OpenID Starter Kit for ASP.NET MVC. Essentially it is an ASP.NET MVC empty project with the added functionality that handles users logging-in with their OpenIDs. I’m still at a very early stage, but the core is there. I plan to break the project into 3 parts - Basic, PopUp and AJAX. The difference is essentially in user’s experience when logging-in. Basic and PopUp have a separate page for login. After entering you OpenID the Basic method will redirect you to your OpenID provider’s page while PopUp will open a smaller PopUp window. AJAX approach will have a box popup wherever on the page you are. I’m still unsure how the user gets to OpenID provider’s page with this approach, but I’ll get to that when I get there. Each of these 3 parts will be implemented using Razor and ASPX view engines.</p>
+
+<p>As I’m not a reinventing-the-wheel kind of a developer my project is using a library called <a href="https://www.dotnetopenauth.net" title="DotNetOpenAuth">DotNetOpenAuth</a> by <a href="https://blog.nerdbank.net/" title="Andrew Arnott">Andrew Arnott</a>. It is a very extensive library for OpenID, OAuth and InfoCard for .NET and I’d be a fool not to use it. The project also uses Entity Framework 4. I’ve also added a guide how to convert the project to get the new features of Entity Framework CTP4 like code-first. But I couldn’t ship that as the CTP license does not permit it. As far as I came to understand from that lawyer talk.</p>
+
+<p>And speaking of licenses, was that a pain to choose. I spent 3 or 4 days just reading articles, forums and of course licenses themselves. I really liked what Jeff Atwood wrote on the subject in his article <a href="https://www.codinghorror.com/blog/2007/04/pick-a-license-any-license.html" title="Jeff Atwood, Pick a License, Any License">Pick a License, Any License</a>. Choosing a license is a very crucial step when publishing an open source project. Without it people can’t do much more then look at your code or they’ll violate your copyrights. This is where your chosen license steps in and let’s them know how they can use your code, where are the limitations when publishing their code that uses yours and if/how they need attribute you or the project. When choosing a license I found that the answers to these three questions will leave you standing with just a few choices. That’s a good thing.</p>
+
+<p>After reading around I was left with Microsoft Public License (Ms-PL), Apache License, version 2.0 and a MIT-style license. I looked what similar projects use. By similar I mean written for the Microsoft’s .Net framework and preferably an ASP.NET MVC related project. It seemed that most of them used Ms-PL so I chose that one, but switched to Apache License v2.0 soon afterward just because it seems to be more widely used so more people will know what’s it about and how to use the source that’s licensed that way.</p>
+
+<p>That was pretty much it for last week. If you’d like to check out the project itself there’s a few ways to do that:</p>
+
+<ul>
+  <li><a href="https://mvcopenid.codeplex.com/" title="MvcOpenID on CodePlex">MvcOpenID on CodePlex</a> - this is the primary hub for the project. Any discussions and issue tracking will take place here. You can download the code or use Mercurial (Hg).</li>
+  <li><a href="https://github.com/gligoran/mvcopenid" title="MvcOpenID on GitHub">MvcOpenID on GitHub</a> - this is another repository I push the code to. It’s mostly there for git users and also because the GitHub site has a lot of awesome features.</li>
+  <li><a href="https://www.ohloh.net/p/mvcopenid" title="MvcOpenID on Ohloh">MvcOpenID on Ohloh</a> - I’ve also submited MvcOpenID to Ohloh. It’s a free public directory of open source software and people.</li>
+</ul>
+
+<p>Check the project out and I hope you like it. Any feedback I can get is of course very welcome.</p>
+
+</div>
+
+
+</article>
+
+<div id="pagination">
+    <div class="previous">
+    
+        <a href="/blog/mercurial-hg-and-git-global-ignore-files-for-windows" title="Previous Post: Mercurial (Hg) and Git Global Ignore Files for Windows">Mercurial (Hg) and Git Global Ignore Files for Windows</a>
+    
+    </div><div class="next">
+    
+        <a href="/blog/timeboxing-getting-things-done" title="next Post: Timeboxing - Getting Things Done">Timeboxing - Getting Things Done</a>
+    
+    </div>
+</div>
+
+
+<section id="comments">
+    <div id="disqus_thread" aria-live="polite">
+        <script type="text/javascript">
+            var disqus_shortname = 'gorangligorin';
+            
+                
+                // var disqus_developer = 1;
+                var disqus_identifier = 'https://www.gorangligorin.com/blog/mvcopenid-open-source-openid-starter-kit-for-asp-net-mvc';
+                var disqus_url = 'https://www.gorangligorin.com/blog/mvcopenid-open-source-openid-starter-kit-for-asp-net-mvc';
+                var disqus_script = 'embed.js';
+            
+            (function () {
+            
+                var embedScript = document.createElement('script');
+                embedScript.type = 'text/javascript';
+                embedScript.async = true;
+                embedScript.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);
+            
+            }());
+        </script>
+    </div>
+</section>
+
+
+
+            </div>
+            <footer id="footer" class="inner">
+                <p>Copyright &copy; 2020 - Goran Gligorin</p>
+<p>Blog content licensed under the Creative Commons
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+</p>
+<p>Unless otherwise stated or granted, code samples licensed under the
+    <a href="https://sm.mit-license.org/">MIT license</a>
+</p>
+
+            </footer>
+        </div>
+    </div>
+
+
+    
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9914927-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js"></script>
+
+<script id="dsq-count-scr" src="//gorangligorin.disqus.com/count.js" async></script>
+
+<script src="/js/links.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$(".fancybox")
+            .attr("rel", "gallery")
+            .fancybox({
+                padding: 0,
+                fitToView: true,
+                autoSize: true
+            });
+
+        $('.entry-content p:not(.gallery) img:not(.emoji)').each(function(i) {
+        	var alt = this.alt;
+        	var parent = $(this).parent();
+
+        	if (alt != '') {
+        		var element = $(this);
+        		if (parent.is('a')) {
+        			element = parent;
+        		}
+        		element.after('<span class="caption">'+alt+'</span>');
+        	}
+        });
+    });
+</script>
+
+</body>
+</html>

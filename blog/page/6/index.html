@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Blog - Goran Gligorin</title>
+	<meta name="author" content="Goran Gligorin"><meta name="description" content="Goran Gligorin's little piece of the Internet">
+	
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/feed.xml" rel="alternate" title="Goran Gligorin" type="application/atom+xml">
+	
+    <link rel="canonical" href="https://www.gorangligorin.com/blog/page/6/">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href="/favicon.ico" rel="shortcut icon">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
+
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/css/code.css" rel="stylesheet" type="text/css">
+</head>
+
+
+    <body>
+    <div class="container">
+        <div id="sidebar">
+            <header>
+    <div class="profilepic">
+    	
+    	<img src="/images/gorangligorin-2.png" alt="Profile Picture" />
+    	
+    </div>
+    <div>
+        <div class="title">Goran Gligorin</div>
+        <div class="subtitle">web developer, internet marketer, online entrepreneur, go-kart racer &amp; runner</div>
+    </div>
+</header>
+
+<div class="navi">
+    <nav id="main-nav">
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/about">about me</a></li>
+            <li><a href="/cv/">cv</a></li>
+            <li><a href="/blog/">blog</a></li>
+            <li><a href="/blog/archives">archives</a></li>
+            <li><a href="/contact">contact</a></li>
+        </ul>
+    </nav>
+    <nav id="sub-nav">
+    <div class="social">
+        
+            <a class="facebook" href="https://facebook.com/goran.gligorin" title="Facebook">Facebook</a>
+        
+        
+            <a class="github" href="https://github.com/gligoran" title="GitHub">GitHub</a>
+        
+        
+            <a class="twitter" href="https://twitter.com/gligoran" title="Twitter">Twitter</a>
+        
+        
+            <a class="linkedin" href="https://linkedin.com/in/gorangligorin" title="LinkedIn">LinkedIn</a>
+        
+        <a class="rss" href="/feed.xml" title="Subscribe">Subscribe</a>
+    </div>
+</nav>
+
+</div>
+
+<div class="overlay"></div>
+
+        </div>
+        <div id="main">
+            <div id="content" class="inner">
+                
+<div itemscope itemtype="http://schema.org/Blog">
+
+
+    
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        
+	<h1 itemprop="name"><a href="/blog/fixing-crawl-errors-from-google-webmaster-tools-on-iis7" itemprop="url">Fixing Crawl Errors From Google Webmaster Tools on IIS7</a></h1>
+	<div class="meta">
+	<span class="date">
+
+
+
+
+<time datetime="2010-08-05T00:00:00+00:00"  itemprop="datePublished">August  5, 2010</time></span>
+	<span class="tags">iis</span>
+	
+		
+
+<span class="comments"><a href="/blog/fixing-crawl-errors-from-google-webmaster-tools-on-iis7#disqus_thread">comments</a></span>
+
+	
+</div>
+
+	<div class="entry-content" itemprop="articleBody">
+		<p>Crawl Errors in <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a> are a way for Google to notify you (a webmaster) that while googlebot tried to crawl a URL on your site it could not access it. It also gives you a description of the error, the date the error was detected and a list of links that point to that URL.</p>
+
+<p>There’s quite a few reasons an error could occur. What to do with specific error is left entirely up to you. In this article I’ll explain how to fix “Not Found” crawl errors using rewrite rules in web.config file.</p>
+
+<p>The first thing you should do is check the “Linked from” list for outside links. If someone out there is linking to your site with a wrong URL it won’t do you much good. There are two things that you could do:</p>
+
+<ul>
+  <li>Contact the site that’s linking to you and ask them to correct the link.</li>
+  <li>You can make a 301 redirect to the correct URL. This will be explained later on.</li>
+</ul>
+
+<p>All of ‘Not Found’ URLs should return a 404 HTTP status code. You can check this with the <a href="https://www.google.com/support/webmasters/bin/answer.py?answer=158587">Fetch as Googlebot</a> tool. There are 2 options you have when dealing with these:</p>
+
+<ul>
+  <li>If the URL is pointing to a page that was on your site but no longer exists you should return a 410 <a href="https://www.google.com/support/webmasters/bin/answer.py?answer=40132" title="HTTP status codes">HTTP status code</a>. This will tell your users, Google and other search engines that your site is ‘Gone’.</li>
+  <li>If the URL is pointing to a page that was moved to another URL you should do a 301 redirect that points to the correct URL.</li>
+</ul>
+
+<h2 id="rewrite-rules-and-webconfig">Rewrite Rules and web.config</h2>
+
+<p>Rewrite rules are a set of rules that tell your web server what to do with some URLs. These rules can be quite complex. But, as you’ll only be dealing with the URLs from the Crawl Error report, these ones will be pretty simple.</p>
+
+<p>First thing you need to do is see if you have a <code class="highlighter-rouge">rewrite</code> section in your web.config file. It should be in <code class="highlighter-rouge">system.webserver</code> which is inside the <code class="highlighter-rouge">configuration</code> section. If you’re missing any part of this just add it. And also add a <code class="highlighter-rouge">rules</code> section inside the <code class="highlighter-rouge">rewrite</code> one. This is where all your rules will go. Your web.config should look something like this:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;configuration&gt;</span>
+    <span class="c">&lt;!-- ... --&gt;</span>
+    <span class="nt">&lt;system.webServer&gt;</span>
+        <span class="c">&lt;!-- ... --&gt;</span>
+        <span class="nt">&lt;rewrite&gt;</span>
+            <span class="nt">&lt;rules&gt;</span>
+                 <span class="c">&lt;!-- Here we'll insert the rewrite rules --&gt;</span>
+            <span class="nt">&lt;/rules&gt;</span>
+        <span class="nt">&lt;/rewrite&gt;</span>
+        <span class="c">&lt;!-- ... --&gt;</span>
+    <span class="nt">&lt;/system.webServer&gt;</span>
+    <span class="c">&lt;!-- ... --&gt;</span>
+<span class="nt">&lt;/configuration&gt;</span>
+</code></pre></div></div>
+
+<h2 id="410---gone">410 - Gone</h2>
+
+<p>URLs to pages that were on your site but no longer exist should return a 410 HTTP status code. There are 2 types of rules you’ll need here depending if the <a href="https://en.wikipedia.org/wiki/Query_string" title="Query string">query string</a> is an important part of the URL or not.</p>
+
+<p>To determine which type of URL it is let’s look at 2 examples:</p>
+
+<ol>
+  <li><code class="highlighter-rouge">www.fakestore.com/jeans/?item=24</code></li>
+  <li><code class="highlighter-rouge">www.fakestore.com/long-jeans/</code></li>
+</ol>
+
+<p>Both of these URLs should return a 404 HTTP status code. Our fake store doesn’t sell jeans with the id 24 any more. Neither do they any longer hold long jeans. The first example shows that query string is very important. You wouldn’t want to remove the title page of jeans department, just those particular jeans. On the contrary that’s exactly what you’d like to achieve in example 2. Today’s websites with the pretty URL movement spreading all through the web, you’re probably be dealing with example 2 like URLs a lot more.</p>
+
+<h3 id="query-string-independent-urls">Query string independent URLs</h3>
+
+<p>Let’s start with query string independent URLs. For this you’ll need to use this snippet of XML code:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"GoneX"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"^URL/?$"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"CustomResponse"</span> <span class="na">statusCode=</span><span class="s">"410"</span> <span class="na">statusReason=</span><span class="s">"Gone"</span> <span class="na">statusDescription=</span><span class="s">"The requested resource is no longer available at the server and no forwarding address is known."</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/rule&gt;</span>
+</code></pre></div></div>
+
+<p>As IIS7 does not allow multiple rules with the same name change the <em><code class="highlighter-rouge">X</code></em> in <code class="highlighter-rouge">GoneX</code> with some unique string. I usually use consecutive numbers (<code class="highlighter-rouge">Gone1</code>, <code class="highlighter-rouge">Gone2</code>, …).</p>
+
+<p>You’ll also need to replace <em><code class="highlighter-rouge">URL</code></em> with the URL you got from Crawl Errors report without the domain part. So if you look back at the second example you’ll only need the <code class="highlighter-rouge">long-jeans/</code> part.</p>
+
+<p>As rewrite rules use <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> for matching URLs you’ll need to be mindful of a couple of thing:</p>
+
+<ul>
+  <li>Make sure that the <code class="highlighter-rouge">^</code> and the <code class="highlighter-rouge">/?$</code> remain as they are. The <code class="highlighter-rouge">^</code> and <code class="highlighter-rouge">$</code> mark the start and the end of the string respectively. And the <code class="highlighter-rouge">/?</code> says that there is an optional slash at the end.</li>
+  <li>Leave out the slash at the end of the URL if there is one. <code class="highlighter-rouge">www.fakestroe.com/long-jeans</code> and <code class="highlighter-rouge">www.fakestore.com/long-jeans/</code> are technically 2 different URLs, but people might type in one or another. That’s why these rules contain a <code class="highlighter-rouge">/?</code> at the end.</li>
+  <li>You’ll also need to escape all the meta characters. The most common ones in URLs are <code class="highlighter-rouge">.</code> <code class="highlighter-rouge">-</code> <code class="highlighter-rouge">+</code> <code class="highlighter-rouge">(</code> and <code class="highlighter-rouge">)</code>. To escape a character you need a backslash in front of it.</li>
+</ul>
+
+<p>With all that said here’s how the above snippet would look like with example 2:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"GoneX"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"^long\\-jeans/?$"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"CustomResponse"</span> <span class="na">statusCode=</span><span class="s">"410"</span> <span class="na">statusReason=</span><span class="s">"Gone"</span> <span class="na">statusDescription=</span><span class="s">"The requested resource is no longer available at the server and no forwarding address is known."</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/rule&gt;</span>
+</code></pre></div></div>
+
+<p>As you can see our rule is also case insensitive. If your web server now receives a request for a URL and matches it with one of your rules it will return a 410 HTTP status code. You can also change the status description by altering the <code class="highlighter-rouge">statusDescription</code> attribute of the <code class="highlighter-rouge">action</code> tag. This message will give your visitors an explanation for the error.</p>
+
+<p>You’ll need to create a separate rule for each query string independent URL that points to a no longer existing page.</p>
+
+<h3 id="query-string-based-urls">Query string based URLs</h3>
+
+<p>Now let’s look at URLs which hold important information in the query string like our example 1. Here you won’t need separate rules for each URL. This is because the <code class="highlighter-rouge">URL</code> attribute in the match tag is only matching the URL without the domain and the query string. So there will only be one rule which will match all URLs:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"GoneQueryStrings"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">".*"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;conditions</span> <span class="na">logicalGrouping=</span><span class="s">"MatchAny"</span><span class="nt">&gt;</span>
+        <span class="c">&lt;!-- conditions go here --&gt;</span>
+    <span class="nt">&lt;/conditions&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"CustomResponse"</span> <span class="na">statusCode=</span><span class="s">"410"</span> <span class="na">statusReason=</span><span class="s">"Gone"</span> <span class="na">statusDescription=</span><span class="s">"The requested resource is no longer available at the server and no forwarding address is known."</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/rule&gt;</span>
+</code></pre></div></div>
+
+<p>Place this rule anywhere amongst your previous rules. You’ll notice the <code class="highlighter-rouge">.*</code> in the URL attribute. Regular expression <code class="highlighter-rouge">.</code> mathces any character and the <code class="highlighter-rouge">*</code> says that there my be 0 of more such characters. This matching any URL. As you don’t want all the URLs on our site to start returning 410s you need some conditions. These conditions look like this:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{QUERY_STRING}"</span> <span class="na">pattern=</span><span class="s">"QUERYSTRING"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>Now all you have to do is to replace the <em><code class="highlighter-rouge">QUERYSTRING</code></em> in the <code class="highlighter-rouge">pattern</code> attribute with the query string from your URL and insert the condition in the above rule. Don’t forget about escaping the query string. You can have as many conditions as you want inside this rule. If any of these conditions match the query string of the URL request received by your web server it will fire up the action the return a 410 HTTP status code.</p>
+
+<h2 id="301--moved-permanently">301 - Moved permanently</h2>
+
+<p>If you find a URL in your Crawl Errors report that has change (moved) you should use a 301 redirect to automatically redirect your users and Google to the new URL.</p>
+
+<p>The difference between a 410 and a 301 rule in your web.config is in the <code class="highlighter-rouge">action</code> tag. For 301 you’ll need to use:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Redirect"</span> <span class="na">url=</span><span class="s">"NEWURL"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p>You’ll need to change <em><code class="highlighter-rouge">NEWURL</code></em> with the URL that you want the old URL to be pointing at. The new URL must be a full URL. So let’s look at the example where <code class="highlighter-rouge">www.example.com/old/</code> is redirected to <code class="highlighter-rouge">www.example.com/new/</code>:</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"Moved1"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"^old/?$"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Redirect"</span> <span class="na">url=</span><span class="s">"https://www.example.com/new/"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/rule&gt;</span>
+</code></pre></div></div>
+
+<p>The same principle applies to query string based URLs. The only difference is that you need to make a separate rule for every URL you’re redirecting to.</p>
+
+<h2 id="all-in-due-time">All in due time</h2>
+
+<p>When you setup all of your rules your part is done. You can check if everything works as it should with <a href="https://www.google.com/support/webmasters/bin/answer.py?answer=158587">Fatch as Googlebot</a> tool or manually entering URLs into your browser.</p>
+
+<p>Googlebot will see these changes the next time it crawls your URLs and according to <a href="https://googlewebmastercentral.blogspot.com/2010/05/url-removal-explained-part-iv-tracking.html">RL removal explained, Part IV: Tracking your requests &amp; what not to remove</a>:</p>
+
+<blockquote>
+  <p>…they will drop out naturally over time as we stop crawling URLs that repeatedly 404.</p>
+</blockquote>
+
+<p>As 410 is stronger then 404 your 410s should start disappearing from the Crawl Errors report over time. The URLs you redirected with a 301 should disappear faster.</p>
+
+<p><em>For more information on creating rewrite rules go to <a href="https://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/">Creating Rewrite Rules for the URL Rewrite Module</a>.</em></p>
+
+<p><em>For testing your Regular Expression you can use <a href="https://regex101.com/">Regular Expression Test Tool</a>.</em></p>
+
+
+		
+		
+	</div>
+
+
+    </article>
+
+
+
+    
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        
+	<h1 itemprop="name"><a href="/blog/jogging-week-1" itemprop="url">Jogging, Week 1</a></h1>
+	<div class="meta">
+	<span class="date">
+
+
+
+
+<time datetime="2010-08-03T00:00:00+00:00"  itemprop="datePublished">August  3, 2010</time></span>
+	<span class="tags">sports</span>
+	
+		
+
+<span class="comments"><a href="/blog/jogging-week-1#disqus_thread">comments</a></span>
+
+	
+</div>
+
+	<div class="entry-content" itemprop="articleBody">
+		<p>Yesterday was the 8th day since I started jogging. I started on Monday, the 26th of July, with lap that somewhat encircles my home village and is 4.65 kilometers in length. That’s 2.89 miles for you imperial readers. I’ve made a map of the route on <a href="https://www.mapmyrun.com/">MapMyRun</a> and named it Lendava GG2. From Tuesday through Saturday continued with a lap that’s a bit smaller - Lendava GG1.</p>
+
+<p>I said to myself that I wouldn’t stop moving the entire length of the lap. I was either going to jog or walk. The walking parts are a kind of pauses between jogging sessions.</p>
+
+<p>The week started without any goals. Every day after waking up I went at it. Usually I started around 12pm as I’m a late sleeper. I just wanted to see where my stamina is at. It turned out I wasn’t in such a bad jogging shape. I ran about a third of the Lendava GG1 before taking my first pause on Tuesday. I took a total of 3 pauses that day. As the days went by I could jog a bit further every day and I managed to eliminate one pause before the week ended. I took Sunday off. A bit of time for my muscles to regenerate.</p>
+
+<p>During last week an internal goal started to emerge as I learned how much my body is capable. I wanted to jog the entire length of Lendava GG1 yesterday without pauses. I seemed quite an achievable goal. But I couldn’t do it. I managed 2/3 of the lap before taking a break. This was the only break I took though. And I managed to cut my fastest time from 19 to 14 minutes. Which is great. I would probably have done it if my sleep wasn’t cut short.</p>
+
+<p>All in all I’m quite happy with the result and I’d like to achieve the mentioned goal during this week. Also this week I’m jogging in the evening. Around 8pm. I want to test out different time periods. I’ll report back about my performance next week.</p>
+
+<p>Do you jog? Let me know how you do it in the comments below.</p>
+
+
+		
+		
+	</div>
+
+
+    </article>
+
+
+
+    
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        
+	<h1 itemprop="name"><a href="/blog/discard-wordpress-previews-from-google-analytics" itemprop="url">Discard WordPress Previews From Google Analytics</a></h1>
+	<div class="meta">
+	<span class="date">
+
+
+
+
+<time datetime="2010-07-26T00:00:00+00:00"  itemprop="datePublished">July 26, 2010</time></span>
+	<span class="tags">wordpress, google analytics</span>
+	
+		
+
+<span class="comments"><a href="/blog/discard-wordpress-previews-from-google-analytics#disqus_thread">comments</a></span>
+
+	
+</div>
+
+	<div class="entry-content" itemprop="articleBody">
+		<p>Recently I’ve noticed that my traffic is way higher on the day that I write posts. This would be normal if I posts where published on the same day I wrote them. But that’s not always the case. Sometimes I get inspired and write a bunch of posts and publish the most relevant one immediately and delay others for a few days. Or I could also just write a draft on one day and then finish it later on.</p>
+
+<p>So I went investigating why the traffic was significantly higher on those days. I poked around my <a href="https://www.google.com/analytics" title="Google Analytics">Google Analytics</a> reports and in Content » Top Content I saw entries like these:</p>
+
+<p><img src="/images/ga-wp-previews.png" alt="Wordpress previews in Google Analytics" title="Wordpress previews in Google Analytics" /></p>
+
+<p>The <code class="highlighter-rouge">p=&lt;number&gt;&amp;preview=true</code> part of the highlighted URLs was the key. Apparently the <a href="https://wordpress.org/extend/plugins/all-in-one-webmaster/" title="All in One Webmaster">WordPress plugin</a> I’ve got installed for Google Analytics and stuff like <a href="https://www.bing.com/toolbox/webmaster/" title="Bing Webmaster Center">Bing Webmaster Tools</a>, <a href="https://developer.yahoo.com/search/siteexplorer/" title="Yahoo Site Explorer">Yahoo Site Explorer</a>, <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a> added the JavaScript code that counts visits even in previews. This wasn’t OK, because it blurs the real traffic results.</p>
+
+<p>So I had two choices. Either change some PHP code of WordPress or the plugin or make Google Analytics discard the preview visits. Neither of these choices isn’t perfect. The problem with the first one is that when WordPress or the plugin get updated my code will be gone and I’d have to do it all over again. The second one on the other hand only works for Goolge Analytics. If you’re using any other traffic analysis services or tools, you’d have to do this for every one of them. I chose the second option as Google Analytics is my most used tool for traffic statistics.</p>
+
+<p>The way to get rid of unwanted URLs in Google Analytics is via filters. The sad news here is that they only work from the moment you add them. You cannot change any data from the past. So I suggest doing this as soon as possible.</p>
+
+<p>So to add this filter I went to my Google Analytics account and clicked on the <em>Edit</em> link in the actions column of the profile I use for this blog. There I clicked on the <em>Add filter</em> link in the upper right hand corner of the <em>Filters Applied to Profile</em> box. I’ve highlighted it here:</p>
+
+<p><img src="/images/ga-wp-addfilter.png" alt="Add filter in Google Analytics" title="Add filter in Google Analytics" /></p>
+
+<p>I didn’t have a filter like this in my Google Analytics account yet, so I had to create one. The was to be a custom filter that would exclude all of the URLs that have <code class="highlighter-rouge">preview=true</code> in them. I called it <em>Discard Previews</em> and when I filled out the <em>Add filter</em> form it looked like this:</p>
+
+<p><img src="/images/ga-wp-filter.png" alt="Discard Wordpress previews filter for Google Analytics" title="Discard Wordpress previews filter for Google Analytics" /></p>
+
+<p>And that was it. The filter was set up and the traffic stats will be much more representative now.</p>
+
+
+		
+		
+	</div>
+
+
+    </article>
+
+
+
+    
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        
+	<h1 itemprop="name"><a href="/blog/samsung-t240-showing-vertical-lines" itemprop="url">Samsung T240 Showing Vertical Lines</a></h1>
+	<div class="meta">
+	<span class="date">
+
+
+
+
+<time datetime="2010-07-10T00:00:00+00:00"  itemprop="datePublished">July 10, 2010</time></span>
+	<span class="tags">tech</span>
+	
+		
+
+<span class="comments"><a href="/blog/samsung-t240-showing-vertical-lines#disqus_thread">comments</a></span>
+
+	
+</div>
+
+	<div class="entry-content" itemprop="articleBody">
+		<p>My Samsung T240 is starting to brake down on me. As you can see in the pictures 2 vertical lines and a yellow patch showed up. The lines are running all the way from the top to the bottom and the patch makes quite a few pixels yellower.</p>
+
+<p class="gallery gallery-2"><a href="/images/t240-lines.jpg" class="fancybox"><img src="/images/thumbs/t240-lines.jpg" alt="Samsung T240 showing yellow and blue vertical lines" /></a>
+<a href="/images/t240-yellow-patch.jpg" class="fancybox"><img src="/images/thumbs/t240-yellow-patch.jpg" alt="Samsung T240 has a yellow patch" /></a></p>
+
+<p>This started about a week ago. First I noticed the blue line and then the yellow patch, but the yellow line appeared just yesterday. Don’t know what’s going on really.</p>
+
+<p>I bought this LCD about a year ago. It’s my second 24 inch monitor. The first one, a Samsung 2493HM, died on me after just 7 months. Fortunately I’ve got a laptop so I wasn’t left screenless, but going from a 24 to a 15.4 is quite a shock. It seems, though, I’m going to have to go through it again. I just hope that Samsung service in Slovenia works a bit faster this time as it took them 2 months to return the money last time.</p>
+
+<p><strong>UPDATE (July 11th 2010)</strong>: Today I noticed another 2 vertical lines. They are in between the previous blue and yellow lines. One of the new ones is red and the other is blue, but not as bright as the first blue one. I also think that the yellow patch got a bit bigger as well.</p>
+
+<p><strong>UPDATE (July 15th 2010)</strong>: A bunch of new vertical lines started appearing. Some of them are full strength now and I could swear that the patch is getting bigger by the day. This is starting to get a bit annoying now.</p>
+
+
+		
+		
+	</div>
+
+
+    </article>
+
+
+</div>
+<nav id="pagination">
+    <div class="previous">
+    
+        <a href="/blog/page/5/">Previous page</a>
+    
+    </div><div class="next">
+    
+        <a href="/blog/page/7/">Next page</a>
+    
+    </div>
+</nav>
+
+            </div>
+            <footer id="footer" class="inner">
+                <p>Copyright &copy; 2020 - Goran Gligorin</p>
+<p>Blog content licensed under the Creative Commons
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+</p>
+<p>Unless otherwise stated or granted, code samples licensed under the
+    <a href="https://sm.mit-license.org/">MIT license</a>
+</p>
+
+            </footer>
+        </div>
+    </div>
+
+
+    
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9914927-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js"></script>
+
+<script id="dsq-count-scr" src="//gorangligorin.disqus.com/count.js" async></script>
+
+<script src="/js/links.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$(".fancybox")
+            .attr("rel", "gallery")
+            .fancybox({
+                padding: 0,
+                fitToView: true,
+                autoSize: true
+            });
+
+        $('.entry-content p:not(.gallery) img:not(.emoji)').each(function(i) {
+        	var alt = this.alt;
+        	var parent = $(this).parent();
+
+        	if (alt != '') {
+        		var element = $(this);
+        		if (parent.is('a')) {
+        			element = parent;
+        		}
+        		element.after('<span class="caption">'+alt+'</span>');
+        	}
+        });
+    });
+</script>
+
+</body>
+</html>

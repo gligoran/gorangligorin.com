@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Discard WordPress Previews From Google Analytics - Goran Gligorin</title>
+	<meta name="author" content="Goran Gligorin"><meta name="description" content="Goran Gligorin's little piece of the Internet">
+	
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/feed.xml" rel="alternate" title="Goran Gligorin" type="application/atom+xml">
+	
+    <link rel="canonical" href="https://www.gorangligorin.com/blog/discard-wordpress-previews-from-google-analytics">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href="/favicon.ico" rel="shortcut icon">
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" type="text/css">
+
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+	<link href="/css/code.css" rel="stylesheet" type="text/css">
+</head>
+
+
+    <body>
+    <div class="container">
+        <div id="sidebar">
+            <header>
+    <div class="profilepic">
+    	
+    	<img src="/images/gorangligorin-2.png" alt="Profile Picture" />
+    	
+    </div>
+    <div>
+        <div class="title">Goran Gligorin</div>
+        <div class="subtitle">web developer, internet marketer, online entrepreneur, go-kart racer &amp; runner</div>
+    </div>
+</header>
+
+<div class="navi">
+    <nav id="main-nav">
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/about">about me</a></li>
+            <li><a href="/cv/">cv</a></li>
+            <li><a href="/blog/">blog</a></li>
+            <li><a href="/blog/archives">archives</a></li>
+            <li><a href="/contact">contact</a></li>
+        </ul>
+    </nav>
+    <nav id="sub-nav">
+    <div class="social">
+        
+            <a class="facebook" href="https://facebook.com/goran.gligorin" title="Facebook">Facebook</a>
+        
+        
+            <a class="github" href="https://github.com/gligoran" title="GitHub">GitHub</a>
+        
+        
+            <a class="twitter" href="https://twitter.com/gligoran" title="Twitter">Twitter</a>
+        
+        
+            <a class="linkedin" href="https://linkedin.com/in/gorangligorin" title="LinkedIn">LinkedIn</a>
+        
+        <a class="rss" href="/feed.xml" title="Subscribe">Subscribe</a>
+    </div>
+</nav>
+
+</div>
+
+<div class="overlay"></div>
+
+        </div>
+        <div id="main">
+            <div id="content" class="inner">
+                <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+    
+	<h1 itemprop="name">Discard WordPress Previews From Google Analytics</h1>
+	<div class="meta">
+	<span class="date">
+
+
+
+
+<time datetime="2010-07-26T00:00:00+00:00"  itemprop="datePublished">July 26, 2010</time></span>
+	<span class="tags">wordpress, google analytics</span>
+	
+		
+
+<span class="comments"><a href="#disqus_thread">comments</a></span>
+
+	
+</div>
+
+	<div class="entry-content" itemprop="articleBody"><p>Recently I’ve noticed that my traffic is way higher on the day that I write posts. This would be normal if I posts where published on the same day I wrote them. But that’s not always the case. Sometimes I get inspired and write a bunch of posts and publish the most relevant one immediately and delay others for a few days. Or I could also just write a draft on one day and then finish it later on.</p>
+
+<p>So I went investigating why the traffic was significantly higher on those days. I poked around my <a href="https://www.google.com/analytics" title="Google Analytics">Google Analytics</a> reports and in Content » Top Content I saw entries like these:</p>
+
+<p><img src="/images/ga-wp-previews.png" alt="Wordpress previews in Google Analytics" title="Wordpress previews in Google Analytics" /></p>
+
+<p>The <code class="highlighter-rouge">p=&lt;number&gt;&amp;preview=true</code> part of the highlighted URLs was the key. Apparently the <a href="https://wordpress.org/extend/plugins/all-in-one-webmaster/" title="All in One Webmaster">WordPress plugin</a> I’ve got installed for Google Analytics and stuff like <a href="https://www.bing.com/toolbox/webmaster/" title="Bing Webmaster Center">Bing Webmaster Tools</a>, <a href="https://developer.yahoo.com/search/siteexplorer/" title="Yahoo Site Explorer">Yahoo Site Explorer</a>, <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a> added the JavaScript code that counts visits even in previews. This wasn’t OK, because it blurs the real traffic results.</p>
+
+<p>So I had two choices. Either change some PHP code of WordPress or the plugin or make Google Analytics discard the preview visits. Neither of these choices isn’t perfect. The problem with the first one is that when WordPress or the plugin get updated my code will be gone and I’d have to do it all over again. The second one on the other hand only works for Goolge Analytics. If you’re using any other traffic analysis services or tools, you’d have to do this for every one of them. I chose the second option as Google Analytics is my most used tool for traffic statistics.</p>
+
+<p>The way to get rid of unwanted URLs in Google Analytics is via filters. The sad news here is that they only work from the moment you add them. You cannot change any data from the past. So I suggest doing this as soon as possible.</p>
+
+<p>So to add this filter I went to my Google Analytics account and clicked on the <em>Edit</em> link in the actions column of the profile I use for this blog. There I clicked on the <em>Add filter</em> link in the upper right hand corner of the <em>Filters Applied to Profile</em> box. I’ve highlighted it here:</p>
+
+<p><img src="/images/ga-wp-addfilter.png" alt="Add filter in Google Analytics" title="Add filter in Google Analytics" /></p>
+
+<p>I didn’t have a filter like this in my Google Analytics account yet, so I had to create one. The was to be a custom filter that would exclude all of the URLs that have <code class="highlighter-rouge">preview=true</code> in them. I called it <em>Discard Previews</em> and when I filled out the <em>Add filter</em> form it looked like this:</p>
+
+<p><img src="/images/ga-wp-filter.png" alt="Discard Wordpress previews filter for Google Analytics" title="Discard Wordpress previews filter for Google Analytics" /></p>
+
+<p>And that was it. The filter was set up and the traffic stats will be much more representative now.</p>
+
+</div>
+
+
+</article>
+
+<div id="pagination">
+    <div class="previous">
+    
+        <a href="/blog/samsung-t240-showing-vertical-lines" title="Previous Post: Samsung T240 Showing Vertical Lines">Samsung T240 Showing Vertical Lines</a>
+    
+    </div><div class="next">
+    
+        <a href="/blog/jogging-week-1" title="next Post: Jogging, Week 1">Jogging, Week 1</a>
+    
+    </div>
+</div>
+
+
+<section id="comments">
+    <div id="disqus_thread" aria-live="polite">
+        <script type="text/javascript">
+            var disqus_shortname = 'gorangligorin';
+            
+                
+                // var disqus_developer = 1;
+                var disqus_identifier = 'https://www.gorangligorin.com/blog/discard-wordpress-previews-from-google-analytics';
+                var disqus_url = 'https://www.gorangligorin.com/blog/discard-wordpress-previews-from-google-analytics';
+                var disqus_script = 'embed.js';
+            
+            (function () {
+            
+                var embedScript = document.createElement('script');
+                embedScript.type = 'text/javascript';
+                embedScript.async = true;
+                embedScript.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);
+            
+            }());
+        </script>
+    </div>
+</section>
+
+
+
+            </div>
+            <footer id="footer" class="inner">
+                <p>Copyright &copy; 2020 - Goran Gligorin</p>
+<p>Blog content licensed under the Creative Commons
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+</p>
+<p>Unless otherwise stated or granted, code samples licensed under the
+    <a href="https://sm.mit-license.org/">MIT license</a>
+</p>
+
+            </footer>
+        </div>
+    </div>
+
+
+    
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-9914927-3']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js"></script>
+
+<script id="dsq-count-scr" src="//gorangligorin.disqus.com/count.js" async></script>
+
+<script src="/js/links.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$(".fancybox")
+            .attr("rel", "gallery")
+            .fancybox({
+                padding: 0,
+                fitToView: true,
+                autoSize: true
+            });
+
+        $('.entry-content p:not(.gallery) img:not(.emoji)').each(function(i) {
+        	var alt = this.alt;
+        	var parent = $(this).parent();
+
+        	if (alt != '') {
+        		var element = $(this);
+        		if (parent.is('a')) {
+        			element = parent;
+        		}
+        		element.after('<span class="caption">'+alt+'</span>');
+        	}
+        });
+    });
+</script>
+
+</body>
+</html>
