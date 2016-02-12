@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+#main
+{
+    margin-left: $sidebar-width + 2 * $sidebar-padding;
+    max-width: $layout-breakpoint-sm - ($sidebar-width + 2 * $sidebar-padding);
+    padding: 70px 70px 0 70px;
+
+    @media screen and (max-width: $layout-breakpoint-sm - 1px)
+    {
+        margin-left: 0;
+        max-width: $layout-breakpoint-sm;        
+        padding: 30px 30px 0 30px;
+    }
+
+    @media screen and (max-width: $layout-breakpoint-xs - 1px)
+    {
+        padding: 15px 15px 0 15px;
+    }
+
+    #content
+    {
+        width: 100%;
+
+        #comments
+        {
+            padding: 20px 0;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    footer
+    {
+        width: 100%;
+
+        &.inner
+        {
+            text-align: center;
+            margin: 0 70px 0 40px;
+            width: auto;
+        }
+    }
+}

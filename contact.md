@@ -1,4 +1,7 @@
 ---
+layout: page
+title: Contact
+comments: false
 ---
 
-TODO: contact
+*create this page*

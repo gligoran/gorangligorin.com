@@ -1,0 +1,33 @@
+<header>
+    <div class="profilepic">
+    	{% if site.author.image %}
+    	<img src="{{ site.author.image }}" alt="Profile Picture" />
+    	{% endif %}
+    </div>
+    <hgroup>
+        <h1>{{ site.title }}</h1>
+        <h2>{{ site.author.ima }}</h2>
+    </hgroup>
+</header>
+
+<div class="navi">
+    <nav id="main-nav">
+        {% include navigation.html %}
+    </nav>
+    <nav id="sub-nav">
+    	<div class="social">
+    		{% if site.email %}
+    			<a class="email" href="mailto:{{ site.author.email }}" title="Email">Email</a>
+    		{% endif %}
+    		{% if site.author.twitter %}
+    			<a class="twitter" href="http://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
+    		{% endif %}
+    		{% if site.author.github %}
+    			<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
+    		{% endif %}
+    		<a class="rss" href="/feed.xml" title="Subscribe">Subscribe</a>
+    	</div>
+    </nav>
+</div>
+
+<div class="overlay"></div>

@@ -1,4 +1,7 @@
 ---
+layout: page
+title: Work experience
+comments: false
 ---
 
-TODO: work experience
+*create this page*

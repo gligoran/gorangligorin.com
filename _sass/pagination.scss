@@ -1,0 +1,45 @@
+@import "variables";
+
+#pagination
+{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+
+    div
+    {
+        display: inline-block;
+        width: calc(100%/2);
+
+        a
+        {
+            color: #333;
+        }
+
+        &.previous a:before
+        {
+            content: "\f060";
+            font-family: FontAwesome;
+            font-weight: normal;
+            padding-right: 5px;
+        }
+
+        &.next
+        {
+            text-align: right;
+
+            a:after
+            {
+                content: "\f061";
+                font-family: FontAwesome;
+                font-weight: normal;
+                padding-left: 5px;
+            }
+        }
+    }
+}

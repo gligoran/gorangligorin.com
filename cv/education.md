@@ -1,4 +1,7 @@
 ---
+layout: page
+title: Education
+comments: false
 ---
 
-TODO: education
+*create this page*

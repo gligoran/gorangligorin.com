@@ -1,0 +1,18 @@
+---
+layout: base
+---
+
+<body>
+    <div class="container">
+        <div id="sidebar">
+            {% include header.html %}
+        </div>
+        <div id="main">
+            <div id="content" class="inner">
+                {{ content }}
+            </div>
+            <footer id="footer" class="inner">
+                {% include footer.html %}
+            </footer>
+        </div>
+    </div>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta name="author" content="Author Name">
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="feed.xml" rel="alternate" title="Title" type="application/atom+xml">
+	<link rel="canonical" href="canonical">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="/favicon.ico" rel="shortcut icon">
+	<link href="/css/style.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="/css/code.css" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+				<header id="header" class="inner">
+                    <div class="profilepic">
+						<img src="https://2.gravatar.com/avatar/9779eebf2a998acf07d40665c0dbbaf3?s=300" alt="Profile Picture" />
+					</div>
+					<hgroup>
+						<h1><a href="/">Site Title</a></h1>
+						<h2>Some stuff about me</h2>
+					</hgroup>
+					<nav id="main-nav">
+						<ul class="main-navigation">
+						  <li><a href="/about/">about</a></li>
+						  <li><a href="/archive">archives</a></li>
+						  <li><a href="https://github.com/Haacked/feedback/issues/new">contact</a></li>
+						  <li><a href="/contributors">contributors</a></li>
+						</ul>
+
+						<section class="aboutme">
+						  <p>
+							site.description
+						  </p>
+						</section>
+					</nav>
+					<nav id="sub-nav">
+						<div class="social">
+							<a class="email" href="mailto:{{ site.email }}" title="Email">Email</a>
+							<a class="twitter" href="http://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
+							<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
+							<a class="rss" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>							
+						</div>
+					</nav>
+                </header>
+			</div>
+		</div>
+		<div class="mid-col">
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+                    {{ content }}
+                </div>
+			</div>
+			<footer id="footer" class="inner">
+                <p>Copyright &copy; 2016 - Goran Gligorin</p>
+				<p>Blog content licensed under the Creative Commons <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+				<p>Unless otherwise stated or granted, code samples licensed under the <a href="http://sm.mit-license.org/">MIT license</a></p>
+				<p>Site design based on the <a href="https://github.com/shashankmehta/greyshade">Greyshade theme</a> under the <a href="http://sm.mit-license.org/">MIT license</a></p>
+            </footer>
+		</div>
+	</div>
+</body>
+</html>

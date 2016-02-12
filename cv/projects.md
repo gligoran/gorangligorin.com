@@ -1,4 +1,7 @@
 ---
+layout: page
+title: Projects
+comments: false
 ---
 
-TODO: projects
+*create this page*

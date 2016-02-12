@@ -1,0 +1,58 @@
+@import "variables";
+
+.meta
+{
+    margin-left: 4px;
+    color: #999;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 1.2em;
+
+    @media screen and (max-width: $layout-breakpoint-sm - 1px)
+    {
+        font-size: 0.9em;
+    }
+
+    a
+    {
+        color: #999;
+
+        &:hover
+        {
+            color: #666;
+        }
+    }
+
+    .date, .tags, .comments, .edit
+    {
+        padding-right: 10px;
+
+        &:before
+        {
+            color: #ccc;
+            font: 1.3em FontAwesome;
+            left: 0;
+            margin-right: 5px;
+        }
+    }
+
+    .date:before
+    {
+        content: "\f073";
+    }
+
+    .tags:before
+    {
+        content: "\f02c";
+    }
+
+    .comments:before
+    {
+        content: "\f075";
+    }
+
+    .edit:before
+    {
+        content: "\f044";
+    }
+}

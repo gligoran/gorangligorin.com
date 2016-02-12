@@ -1,0 +1,22 @@
+---
+layout: default
+single: true
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    {% include article.html %}
+</article>
+
+<div id="pagination">
+    <div class="previous">
+    {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" title="Previous Post: {{ page.previous.title }}">{{ page.previous.title }}</a>
+    {% endif %}
+    </div><div class="next">
+    {% if page.next.url %}
+        <a href="{{ page.next.url }}" title="next Post: {{ page.next.title }}">{{ page.next.title }}</a>
+    {% endif %}
+    </div>
+</div>
+
+{% include comments.html %}

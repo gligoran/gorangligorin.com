@@ -1,4 +1,7 @@
 ---
+layout: page
+title: Skills
+comments: false
 ---
 
-TODO: skills
+*create this page*

@@ -1,0 +1,81 @@
+@import "variables.scss";
+
+.entry-content
+{
+    margin-left: 0;
+    line-height: 1.4em;
+    font-size: 1.5em;
+
+    @media screen and (max-width: $layout-breakpoint-xs - 1px)
+    {
+        font-size: 1.3em;
+    }
+
+    p
+    {
+        margin-top: 30px;
+
+        @media screen and (max-width: $layout-breakpoint-xs - 1px)
+        {
+            margin-top: 15px;
+        }
+    }
+
+    h2
+    {
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-bottom: -20px;
+        font-weight: bold;
+
+        &::before
+        {
+            border-bottom: none;
+        }
+    }
+
+    a:hover
+    {
+        text-decoration: underline;
+    }
+
+    blockquote
+    {
+        border-left: 5px solid $primary-color;
+        background: #F7F7F7;
+
+        p
+        {
+            margin-top: 0px;
+        }
+    }
+
+    table
+    {
+        line-height: 1.2em;
+
+        td
+        {
+            text-align: left;
+        }
+    }
+
+    .more-link
+    {
+        display: block;
+        margin-top: 16px;
+        padding-left: 30px;
+        position: relative;
+
+        &:before
+        {
+            line-height: 1.2em;
+        }
+    }
+
+    img, video
+    {
+        max-width: 100%;
+        height: auto;
+    }
+}

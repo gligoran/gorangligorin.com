@@ -1,0 +1,92 @@
+@import "variables.scss";
+
+article
+{
+    padding: 0 0 20px 0;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+
+    + article
+    {
+        padding-top: 70px;
+
+        @media screen and (max-width: $layout-breakpoint-sm - 1px)
+        {
+            padding-top: 25px;
+        }
+    }
+
+    h1
+    {
+        font-family: "Open Sans";
+        font-weight: 800;
+        font-size: 5em;
+        padding-bottom: 15px;
+        line-height: 1em;
+        margin: 0;
+
+        @media screen and (max-width: $layout-breakpoint-sm - 1px)
+        {
+            font-size: 3.2em;
+        }
+
+        @media screen and (max-width: $layout-breakpoint-xs - 1px)
+        {
+            font-weight: 700;
+            font-size: 2em;
+            overflow: hidden;
+        }
+
+        a
+        {
+            color: #333;
+        }
+    }
+
+    pre code
+    {
+        @media screen and (max-width: $layout-breakpoint-sm - 1px)
+        {
+            -ms-word-wrap: break-word;
+            word-wrap: break-word;
+        }
+    }
+
+    @media screen and (max-width: 800px)
+    {
+        article
+        {
+            padding-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width: $layout-breakpoint-sm - 1px)
+    {
+        padding: 15px 0;
+    }
+
+    table.matrix
+    {
+        td, th
+        {
+            font-size: 0.7em;
+            font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida',Arial,Verdana,sans-serif;
+        }
+
+        td
+        {
+            background-color: #fff;
+        }
+
+        th
+        {
+            background-color: #ffd;
+        }
+
+        pre.csharpcode
+        {
+            border: none;
+            font-size: 1.1em;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.archives
+{
+    font-family: "Open Sans";
+
+    article
+    {
+        .meta
+        {
+            line-height: 1.5em;
+            margin-top: 0;
+        }
+
+        span::before
+        {
+            padding-right: 0;
+        }
+    }
+
+    h2.year
+    {
+        font-size: 1.1em;
+        margin-top: 30px;
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+        color: #555;
+    }
+
+    h3
+    {
+        display: inline-block;
+        font-size: 0.9em;
+        font-weight: 400;
+        margin: 10px 0 0 0;
+        line-height: 1em;
+    }
+
+    ul
+    {
+        padding: 10px 20px 20px 20px;
+        margin-left: 30px;
+
+        li div.meta
+        {
+            display: inline-block;
+            font-size: 0.6em;
+            font-weight: 300;
+
+            span.date, span.edit
+            {
+                display: none;
+            }
+        }
+    }
+}

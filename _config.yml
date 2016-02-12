@@ -5,14 +5,13 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-paginate: 4
+paginate: 2
 paginate_path: "/blog/page/:num/"
 comments: true
 
 source: .
 destination: _site
 sass:
-  sass_dir: _scss
   style: compressed
 
 gems:
@@ -22,45 +21,38 @@ gems:
   - jekyll-redirect-from
   - jemoji # http://www.emoji-cheat-sheet.com/
 
+exclude:
+  - node_modules
+  - package.json
+  - bower_components
+  - bower.json
+  - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - .remarkrc
+
 # seo settings
 title: "Goran Gligorin"
-description: "A free Jekyll theme for download"
+description: "Goran Gligorin's little piece of the Internet"
 keywords: "goran gligorin, goran, gligorin, blog, cv, curriculum vitae, developer, web developer, c# developer, .net developer, entrepreneur"
 url: http://gorangligorin.com
 baseurl: ""
 
-google_analytics: UA-9914927-3
-repo: http://github.com/gligoran/gorangligorin.com
-disqus_shortname: "gorangligorin"
-disqus_site_shortname: "gorangligorin"
+google_analytics_tracking_id: UA-9914927-3
+# repo: http://github.com/gligoran/gorangligorin.com
+disqus_short_name: "gorangligorin"
+disqus_show_comment_count: true
 
 # author settings
 author:
   name: Goran Gligorin
-  job: C# & Web Developer
+  ima: "c# programmer, web developer, internet marketer, online entrepreneur & go-kart racer"
   bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  gravatar: https://2.gravatar.com/avatar/9779eebf2a998acf07d40665c0dbbaf3
-  thumb: /images/gorangligorin.png
+  # image: https://2.gravatar.com/avatar/9779eebf2a998acf07d40665c0dbbaf3?s=240
+  image: /images/gorangligorin-bw.png
   email: goran@gligorin.com
   url: http://gorangligorin.com
   github: http://github.com/gligoran
   twitter: http://twitter.com/gligoran
   facebook: http://facebook.com/goran.gligorin
   linkedin: http://linkedin.com/in/gorangligorin
-
-# nav pages
-nav:
-  - slug: blog
-    title: blog
-  - slug: skills
-    title: skills
-  - slug: work-experience
-    title: work experience
-  - slug: projects
-    title: projects
-  - slug: education
-    title: education
-  - slug: archives
-    title: archives
-
-exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]

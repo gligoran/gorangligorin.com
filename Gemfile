@@ -8,3 +8,4 @@ gem 'jekyll-feed'
 # gem 'jekyll-redirect-from'
 # gem 'jekyll-mentions'
 gem 'jemoji'
+gem "compass"
