@@ -1,21 +1,66 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
+# build settings
+permalink: /blog/:title
+highlighter: rouge
 markdown: kramdown
+kramdown:
+  input: GFM
+
+paginate: 4
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: .
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed
+
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jemoji # http://www.emoji-cheat-sheet.com/
+
+# seo settings
+title: "Goran Gligorin"
+description: "A free Jekyll theme for download"
+keywords: "goran gligorin, goran, gligorin, blog, cv, curriculum vitae, developer, web developer, c# developer, .net developer, entrepreneur"
+url: http://gorangligorin.com
+baseurl: ""
+
+google_analytics: UA-9914927-3
+repo: http://github.com/gligoran/gorangligorin.com
+disqus_shortname: "gorangligorin"
+disqus_site_shortname: "gorangligorin"
+
+# author settings
+author:
+  name: Goran Gligorin
+  job: C# & Web Developer
+  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  gravatar: https://2.gravatar.com/avatar/9779eebf2a998acf07d40665c0dbbaf3
+  thumb: /images/gorangligorin.png
+  email: goran@gligorin.com
+  url: http://gorangligorin.com
+  github: http://github.com/gligoran
+  twitter: http://twitter.com/gligoran
+  facebook: http://facebook.com/goran.gligorin
+  linkedin: http://linkedin.com/in/gorangligorin
+
+# nav pages
+nav:
+  - slug: blog
+    title: blog
+  - slug: skills
+    title: skills
+  - slug: work-experience
+    title: work experience
+  - slug: projects
+    title: projects
+  - slug: education
+    title: education
+  - slug: archives
+    title: archives
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
