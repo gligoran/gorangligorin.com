@@ -13,6 +13,10 @@ source: .
 destination: _site
 sass:
   style: compressed
+jekyll_timeago:
+  depth: 1
+  suffix: ''
+  years: ''
 
 gems:
   - jekyll-paginate
@@ -20,6 +24,7 @@ gems:
   - jekyll-feed
   - jekyll-redirect-from
   - jemoji # http://www.emoji-cheat-sheet.com/
+  - jekyll-timeago
 
 exclude:
   - node_modules
@@ -50,6 +55,7 @@ author:
   bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
   # image: https://2.gravatar.com/avatar/9779eebf2a998acf07d40665c0dbbaf3?s=240
   image: /images/gorangligorin-bw.png
+  birthdate: 1986-09-24
   email: goran@gligorin.com
   url: http://gorangligorin.com
   github: http://github.com/gligoran
