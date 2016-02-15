@@ -83,7 +83,7 @@ Tržaška 116 <br />
 1000 Ljubljana <br />
 Slovenia
 
-I was a C# developer using .Net framework 2.0 and Visual Studio 2003 and 2005. I worked in a team environment on business Windows and ASP.NET Web Applications. These applications where usually custom information systems for specific customers. All of these applications used SQL Server databases.
+I was a C# developer using .NET framework 2.0 and Visual Studio 2003 and 2005. I worked in a team environment on business Windows and ASP.NET Web Applications. These applications where usually custom information systems for specific customers. All of these applications used SQL Server databases.
 
 {:.muted .small}
 Skills used: *C#, .NET Framework, ASP.NET, MSSQL, Visual Studio, VSS*

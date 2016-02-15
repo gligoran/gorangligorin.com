@@ -21,20 +21,7 @@
             <li><a href="/contact">contact</a></li>
         </ul>
     </nav>
-    <nav id="sub-nav">
-    	<div class="social">
-    		{% if site.email %}
-    			<a class="email" href="mailto:{{ site.author.email }}" title="Email">Email</a>
-    		{% endif %}
-    		{% if site.author.twitter %}
-    			<a class="twitter" href="http://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
-    		{% endif %}
-    		{% if site.author.github %}
-    			<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
-    		{% endif %}
-    		<a class="rss" href="/feed.xml" title="Subscribe">Subscribe</a>
-    	</div>
-    </nav>
+    {% include social.html %}
 </div>
 
 <div class="overlay"></div>

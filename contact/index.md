@@ -23,5 +23,5 @@ Hello there! Thanks for trying to reach out to me. My preferred method of commun
 **address:** <br />
 Goran Gligorin <br />
 Trimlini 64c <br />
-SI-9220 Lendava <br />
+9220 Lendava <br />
 Slovenia

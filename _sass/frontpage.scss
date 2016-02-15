@@ -154,65 +154,6 @@ body.frontpage
             {
                 display: block;
             }
-
-            .social
-            {
-                margin-bottom: 10px;
-
-                a
-                {
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
-                    border-radius: 50%;
-                    display: -moz-inline-stack;
-                    display: inline-block;
-                    vertical-align: middle;
-                    zoom: 1;
-                    text-indent: -9999px;
-                    opacity: 0.5;
-                    width: 28px;
-                    height: 28px;
-                    margin: 10px;
-
-                    &:hover
-                    {
-                        opacity: 1;
-                    }
-
-                    &.twitter
-                    {
-                        background: url('/images/social/twitter.png?1385702818') center no-repeat #55cff8;
-                        border: 1px solid #55CFF8;
-
-                        &:hover
-                        {
-                            border: 1px solid #24c1f6;
-                        }
-                    }
-
-                    &.github
-                    {
-                        background: url('/images/social/github.png?1385702818') center no-repeat #afb6ca;
-                        border: 1px solid #afb6ca;
-
-                        &:hover
-                        {
-                            border: 1px solid #909ab6;
-                        }
-                    }
-
-                    &.rss
-                    {
-                        background: url('/images/social/rss.png?1385702818') center no-repeat #ef7522;
-                        border: 1px solid #EF7522;
-
-                        &:hover
-                        {
-                            border: 1px solid #cf5d0f;
-                        }
-                    }
-                }
-            }
         }
     }
 }

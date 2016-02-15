@@ -1,0 +1,17 @@
+<nav id="sub-nav">
+    <div class="social">
+        {% if site.author.facebook %}
+            <a class="facebook" href="https://facebook.com/{{ site.author.facebook }}" title="Facebook">Facebook</a>
+        {% endif %}
+        {% if site.author.github %}
+            <a class="github" href="https://github.com/{{ site.author.github }}" title="GitHub">GitHub</a>
+        {% endif %}
+        {% if site.author.twitter %}
+            <a class="twitter" href="http://twitter.com/{{ site.author.twitter }}" title="Twitter">Twitter</a>
+        {% endif %}
+        {% if site.author.linkedin %}
+            <a class="linkedin" href="https://linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn">LinkedIn</a>
+        {% endif %}
+        <a class="rss" href="/feed.xml" title="Subscribe">Subscribe</a>
+    </div>
+</nav>
