@@ -15,13 +15,13 @@ Hello there! Thanks for trying to reach out to me. My preferred method of commun
     <input type="hidden" name="_next" value="/contact/thanks" />
 </form>
 
-**email:** <mailto:goran@gligorin.com>
-**skype:** gligoran
-**phone:** (+386) 41 550 088
+**email:** <mailto:goran@gligorin.com> <br />
+**skype:** gligoran <br />
+**phone:** (+386) 41 550 088 <br />
 **website:** [gorangligorin.com](http://gorangligorin.com)
 
-**address:**
-Goran Gligorin
-Trimlini 64c
-SI-9220 Lendava
+**address:** <br />
+Goran Gligorin <br />
+Trimlini 64c <br />
+SI-9220 Lendava <br />
 Slovenia

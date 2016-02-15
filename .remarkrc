@@ -4,7 +4,8 @@
         "maximum-line-length": false,
         "maximum-heading-length": false,
         "no-html": false,
-        "first-heading-level": false
+        "first-heading-level": false,
+        "list-item-indent": "space"
     }
   }
 }

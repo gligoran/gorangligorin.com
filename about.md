@@ -28,6 +28,10 @@ I've loved sports from from when I was a little boy and I still do. From wakeboa
 
 ![Racing Go-Karts](/images/about/karting.jpg)
 
+I'm also a runner. I like keeping in shape and, if the weather allows it, I'm out there putting miles on my running shoes at least every other day.
+
+Recently I also developed a passion for reading. I wasn't much of a reader when I was young, but as I grew up I've discovered an attraction to the written word.
+
 ## My (long) story
 
 I grew up in a small town called [Lendava][] in [Slovenia][]. Although the life around me was slow, I was always a lively child. I liked playing in the backyard, kicking around a soccer ball, riding my bike and later my skateboard. That is until I got my first computer at 9 years old.

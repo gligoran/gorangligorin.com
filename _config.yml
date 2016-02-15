@@ -4,6 +4,7 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: false
 
 paginate: 2
 paginate_path: "/blog/page/:num/"
@@ -51,7 +52,7 @@ disqus_show_comment_count: true
 # author settings
 author:
   name: Goran Gligorin
-  ima: "c# programmer, web developer, internet marketer, online entrepreneur & go-kart racer"
+  ima: "c# programmer, web developer, internet marketer, online entrepreneur, go-kart racer & runner"
   bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
   # image: https://2.gravatar.com/avatar/9779eebf2a998acf07d40665c0dbbaf3?s=240
   image: /images/gorangligorin-bw.png

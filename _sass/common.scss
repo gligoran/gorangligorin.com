@@ -5,42 +5,25 @@
     font-size: 10px;
 }
 
+.small
+{
+    font-size: 0.75em;
+}
+
 .muted
 {
     opacity: 0.5;
 }
 
-.row
+form#contact
 {
-    margin-top: 30px;
-    clear: both;
+    width: 50%;
+    float: right;
 
-    .element-50
+    @media screen and (max-width: $layout-breakpoint-xs - 1px)
     {
-        width: 50%;
-        float: left;
-    }
-}
-
-.clearfix:after
-{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-form
-{
-    &#contact
-    {
-        width: 50%;
-        float: right;
-
-        @media screen and (max-width: $layout-breakpoint-xs - 1px)
-        {
-            float: none;
-            width: 100%;
-        }
+        float: none;
+        width: 100%;
     }
 
     input, textarea
