@@ -80,9 +80,31 @@
         }
     }
 
+    .caption
+    {
+        display: block;
+        font-style: italic;
+        font-size: 0.6em;
+        font-family: helvetica, arial, san-serif;
+        color: #999;
+        padding-left: 15px;
+        position: relative;
+        margin-top: -5px;
+
+        &:before
+        {
+            content: "\f040";
+            color: #ccc;
+            font: 1.3em FontAwesome;
+            line-height: 1.6em;
+            position: absolute;
+            left: 0;
+        }
+    }
+
     img:not(.emoji)
     {
-        width: 100%;
+        max-width: 100%;
         height: auto;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     }
