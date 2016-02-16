@@ -19,22 +19,22 @@ post_ext: md
 page_ext: md
 
 gems:
+  - github-pages
   - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-mentions
   - jemoji # http://www.emoji-cheat-sheet.com/
 
 exclude:
-  - node_modules
-  - package.json
-  - bower_components
-  - bower.json
   - gulpfile.js
   - Gemfile
   - Gemfile.lock
   - .remarkrc
   - vendor
+  - README.md
+  - CNAME
 
 # seo settings
 title: "Goran Gligorin"
