@@ -99,7 +99,7 @@
             }
         }
 
-        h1
+        .title
         {
             font-family: "Open Sans";
             font-weight: 800;
@@ -115,7 +115,7 @@
             }
         }
 
-        h2
+        .subtitle
         {
             font-family: "Open Sans";
             font-style: italic;
@@ -123,6 +123,7 @@
             line-height: 1.24em;
             font-weight: normal;
             color: #ddd;
+            margin: 15px 0;
 
             @media screen and (max-width: $layout-breakpoint-xs - 1px)
             {
