@@ -14,8 +14,6 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% if site.GH_ENV %}<base href="{{ site.url }}">{% endif %}
-
 	<link href="/feed.xml" rel="alternate" title="{{site.title}}" type="application/atom+xml">
 	{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' }}{% endif %}{% endcapture %}
     <link rel="canonical" href="{{ canonical }}">
