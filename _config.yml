@@ -15,6 +15,9 @@ destination: _site
 sass:
   style: compressed
 
+post_ext: md
+page_ext: md
+
 gems:
   - jekyll-paginate
   - jekyll-sitemap
