@@ -31,6 +31,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .remarkrc
+  - vendor
 
 # seo settings
 title: "Goran Gligorin"
