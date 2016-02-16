@@ -1,0 +1,13 @@
+.gallery
+{
+    text-align: center;
+
+    &.gallery-4
+    {
+        img
+        {
+            width: 20%;
+            margin: 2px;
+        }
+    }
+}
