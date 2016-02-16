@@ -12,7 +12,7 @@ Wednesday was a great day. First I passed another exam - only 4 left now - and s
 
 Wakeboarding is one of my newer hobbies. I've skateboarded and snowboarded before and at the end of last August I tried wakeboarding as well. I was hooked instantly. The way the board glides across the water surface and the way you can take corners is just amazing.
 
-It was my 4<sup>th</sup> time on a wakeboard. I was at Planksee two times last year and once at the [Orlando Watersports Complex][ows] during a USA road trip I went on with my friends.
+It was my 4th time on a wakeboard. I was at Planksee two times last year and once at the [Orlando Watersports Complex][ows] during a USA road trip I went on with my friends.
 
 The weather was just great on Wednesday and with it being a work day there were only a few people there. Which meant almost no queue time. It was just superb at first, but the lack of my fitness started to show quite fast. I haven't done any sports in quite a while now and this wakeboarding session burnt through my energy and stamina levels really fast. I wasn't even able to complete a full lap at the end. This just gives me one more reason to get into shape. And quick :)
 
