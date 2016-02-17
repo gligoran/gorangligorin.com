@@ -30,6 +30,6 @@ Check the project out and I hope you like it. Any feedback I can get is of cours
 [dotnetopenauth]: http://www.dotnetopenauth.net "DotNetOpenAuth"
 [aa]: http://blog.nerdbank.net/ "Andrew Arnott"
 [pick]: http://www.codinghorror.com/blog/2007/04/pick-a-license-any-license.html "Jeff Atwood, Pick a License, Any License"
-[cp]: http://mvcopneid.codeplex.com "MvcOpenID on CodePlex"
+[cp]: http://mvcopenid.codeplex.com/ "MvcOpenID on CodePlex"
 [gh]: https://github.com/gligoran/mvcopenid "MvcOpenID on GitHub"
 [ohloh]: https://www.ohloh.net/p/mvcopenid "MvcOpenID on Ohloh"
