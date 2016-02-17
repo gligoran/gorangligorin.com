@@ -10,7 +10,7 @@ Recently I've noticed that my traffic is way higher on the day that I write post
 
 So I went investigating why the traffic was significantly higher on those days. I poked around my [Google Analytics][ga] reports and in Content &raquo; Top Content I saw entries like these:
 
-[![Wordpress previews in Google Analytics][img-ga-wp]][img-ga-wp]{:.fancybox}
+![Wordpress previews in Google Analytics][img-ga-wp]
 
 The `p=<number>&preview=true` part of the highlighted URLs was the key. Apparently the [WordPress plugin][wp-aio] I've got installed for Google Analytics and stuff like [Bing Webmaster Tools][bwt], [Yahoo Site Explorer][yahoo-se], [Google Webmaster Tools][gwt] added the JavaScript code that counts visits even in previews. This wasn't OK, because it blurs the real traffic results.
 
@@ -20,11 +20,11 @@ The way to get rid of unwanted URLs in Google Analytics is via filters. The sad 
 
 So to add this filter I went to my Google Analytics account and clicked on the *Edit* link in the actions column of the profile I use for this blog. There I clicked on the *Add filter* link in the upper right hand corner of the *Filters Applied to Profile* box. I've highlighted it here:
 
-[![Add filter in Google Analytics][img-ga-wp-addfilter]][img-ga-wp-addfilter]{:.fancybox}
+![Add filter in Google Analytics][img-ga-wp-addfilter]
 
 I didn't have a filter like this in my Google Analytics account yet, so I had to create one. The was to be a custom filter that would exclude all of the URLs that have `preview=true` in them. I called it *Discard Previews* and when I filled out the *Add filter* form it looked like this:
 
-[![Discard Wordpress previews filter for Google Analytics][img-ga-wp-filter]][img-ga-wp-filter]{:.fancybox}
+![Discard Wordpress previews filter for Google Analytics][img-ga-wp-filter]
 
 And that was it. The filter was set up and the traffic stats will be much more representative now.
 

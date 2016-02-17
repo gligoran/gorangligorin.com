@@ -6,6 +6,6 @@ comments: true
 categories: [puzzles]
 ---
 
-[![Disassembled Rubik's Cube][img]][img]{:.fancybox}
+![Disassembled Rubik's Cube][img]
 
 [img]: /images/disassembled-rubiks-cube.jpg "Disassembled Rubik's Cube"

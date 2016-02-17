@@ -6,7 +6,7 @@ comments: false
 
 My name is Goran Gligorin. I'm a 29 year old serial developer, programmer, entrepreneur, and a part-time go-kart racer. I occasionally sit on top of pyramids and enjoy the view.
 
-[![Pyramids in Uxmal, Yucatan, Mexico][img-uxmal]][img-uxmal]{:.fancybox}
+![Pyramids in Uxmal, Yucatan, Mexico][img-uxmal]
 
 If you wish to ask me a question, hire me, or just say hello, you can do so by contacting me using info on the [contact](/contact) page, but be nice and please email me before calling.
 
@@ -26,7 +26,7 @@ I love to travel. When I was a child, my grandparents lived in Serbia, about 450
 
 I've loved sports from when I was a little boy and I still do. From wakeboarding at sea to snowboarding down a ski slope, I've always loved adrenaline. In its latest incarnation that has brought me to start racing in sports go-karts. You can see me going round a bend in the picture blow.
 
-[![Racing Go-Karts at Alberone Karting Club‎ in Italy][img-karting]][img-karting]{:.fancybox}
+![Racing Go-Karts at Alberone Karting Club‎ in Italy][img-karting]
 
 I'm also a runner. I like keeping in shape and, if the weather allows it, I'm out there putting miles on my running shoes at least every other day.
 

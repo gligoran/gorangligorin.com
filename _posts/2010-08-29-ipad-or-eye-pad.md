@@ -6,7 +6,7 @@ comments: true
 categories: [jokes]
 ---
 
-[![Apple Eye Pad][img]][img]{:.fancybox}
+![Apple Eye Pad][img]
 
 How didn't I think of this <b>pun</b> before? It's brilliant :smiley:
 
