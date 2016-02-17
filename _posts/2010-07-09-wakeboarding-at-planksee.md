@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Wakeboarding at Planksee"
-date: 2010-07-09T12:33:21+02:00
+date: 2010-07-09
 comments: true
 categories: [sports]
 ---

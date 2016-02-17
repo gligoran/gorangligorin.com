@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Discard WordPress Previews From Google Analytics"
-date: 2010-07-26T12:20:54+02:00
+date: 2010-07-26
 comments: true
 categories: [wordpress, google analytics]
 ---

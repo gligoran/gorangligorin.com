@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The (30 Day) Challenge"
-date: 2010-07-02T07:04:49+02:00
+date: 2010-07-02
 comments: true
 categories: [internet marketing]
 ---

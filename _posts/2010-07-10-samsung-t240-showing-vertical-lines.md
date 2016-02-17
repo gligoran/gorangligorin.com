@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Samsung T240 Showing Vertical Lines"
-date: 2010-07-10T15:34:37+02:00
+date: 2010-07-10
 comments: true
 categories: [hardware]
 ---

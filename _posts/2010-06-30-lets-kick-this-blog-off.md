@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Let's Kick This Blog Off"
-date: 2010-06-30T20:16:28+02:00
+date: 2010-06-30
 comments: true
 categories: [goals]
 ---

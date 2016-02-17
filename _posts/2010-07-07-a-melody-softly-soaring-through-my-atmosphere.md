@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Melody Softly Soaring Through My Atmosphere"
-date: 2010-07-07T15:38:16+02:00
+date: 2010-07-07
 comments: true
 categories: [music]
 ---

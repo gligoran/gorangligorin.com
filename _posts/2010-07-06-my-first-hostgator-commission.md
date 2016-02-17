@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My First HostGator Commission"
-date: 2010-07-06T06:48:13+02:00
+date: 2010-07-06
 comments: true
 categories: [internet marketing]
 ---
