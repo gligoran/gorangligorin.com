@@ -14,7 +14,7 @@ Tuesday was hard. I pushed myself on Monday to complete my goal of jogging a ful
 
 ## Wednesday
 
-This was the day when it finally happened. I did it! I completed the whole lap, the whole 3.16 kilometers of it :) I was extremely happy when I got home. But also very exhausted. Physically I should have given up way back, but I just kept going and going. It was a mental win. I took me 16 minutes to do it. It's not my best on this lap but I don't care.
+This was the day when it finally happened. I did it! I completed the whole lap, the whole 3.16 kilometers of it :smiley: I was extremely happy when I got home. But also very exhausted. Physically I should have given up way back, but I just kept going and going. It was a mental win. I took me 16 minutes to do it. It's not my best on this lap but I don't care.
 
 ## Thursday and Friday
 
@@ -28,6 +28,6 @@ Sunday was a day off as well except this time I didn't do any other physical act
 
 ## Next week and new goals
 
-As I achieved my goal on Wednesday I had to come up with something new to jog to ;). Next logical step would probably be to try and get at least 2 whole laps in the same week and then build on that number until I can jog the whole lap each day of the week. I'll be going back to Ljubljana soon though as my exams are getting closer. I have to find a similarly long lap there. It probably won't be a perfect match but I'll do my best. Oh, and I'm switching back to jogging after I wake up.
+As I achieved my goal on Wednesday I had to come up with something new to jog to :wink:. Next logical step would probably be to try and get at least 2 whole laps in the same week and then build on that number until I can jog the whole lap each day of the week. I'll be going back to Ljubljana soon though as my exams are getting closer. I have to find a similarly long lap there. It probably won't be a perfect match but I'll do my best. Oh, and I'm switching back to jogging after I wake up.
 
 [jogging-week1]: /blog/jogging-week-1 "Jogging, Week 1"

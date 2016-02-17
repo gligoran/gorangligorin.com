@@ -14,7 +14,7 @@ Wakeboarding is one of my newer hobbies. I've skateboarded and snowboarded befor
 
 It was my 4th time on a wakeboard. I was at Planksee two times last year and once at the [Orlando Watersports Complex][ows] during a USA road trip I went on with my friends.
 
-The weather was just great on Wednesday and with it being a work day there were only a few people there. Which meant almost no queue time. It was just superb at first, but the lack of my fitness started to show quite fast. I haven't done any sports in quite a while now and this wakeboarding session burnt through my energy and stamina levels really fast. I wasn't even able to complete a full lap at the end. This just gives me one more reason to get into shape. And quick :)
+The weather was just great on Wednesday and with it being a work day there were only a few people there. Which meant almost no queue time. It was just superb at first, but the lack of my fitness started to show quite fast. I haven't done any sports in quite a while now and this wakeboarding session burnt through my energy and stamina levels really fast. I wasn't even able to complete a full lap at the end. This just gives me one more reason to get into shape. And quick :smiley:
 
 The real shock came yesterday though. I think there was not a muscle on and around my arms that wasn't sore. I couldn't even extend my arms fully. Oh and did I mention the sunburns? Got those too. But it was worth it. I started learning how to ride switch and did a few ollies. Buying my own board just jumped up quite a few places in my book. Got any suggestions?
 
