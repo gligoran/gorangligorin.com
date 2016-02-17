@@ -3,7 +3,7 @@ layout: post
 title: "Samsung T240 Showing Vertical Lines"
 date: 2010-07-10
 comments: true
-categories: [hardware]
+categories: [tech]
 ---
 
 My Samsung T240 is starting to brake down on me. As you can see in the pictures 2 vertical lines and a yellow patch showed up. The lines are running all the way from the top to the bottom and the patch makes quite a few pixels yellower.
