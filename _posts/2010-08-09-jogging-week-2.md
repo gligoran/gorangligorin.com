@@ -3,7 +3,7 @@ layout: post
 title: "Jogging, Week 2"
 date: 2010-08-09
 comments: true
-categories: []
+categories: [sports]
 ---
 
 In week 2 of my jogging I decided to jog around 8 PM. I wanted to see what time better suits me. I'll do a post on this some time in the future as I have to do some more testing. I already wrote about Monday in my [Jogging, Week 1][jogging-week1] post so here's how the other days went.
