@@ -4,7 +4,7 @@ rvm:
 
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproof ./_site --external_only --only-4xx --check-favicon --check-html --verbose
+  - bundle exec htmlproofer ./_site --external_only --only-4xx --check-favicon --check-html
 
 branches:
   only:
