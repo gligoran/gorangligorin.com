@@ -44,7 +44,7 @@ Skills used: *Microsoft Dynamics NAV (2.0 - 2013), SQL Server Management Studio,
 ## Joomla Web Developer
 
 {:.muted .timespan .small}
-January 2012 - November 2014
+June 2010 - November 2010
 
 **[Faculty of Natural Sciences and Mathematics][fnm]** <br />
 Koroška cesta 160 <br />
@@ -56,7 +56,7 @@ I was contracted by the Faculty of Natural Sciences and Mathematics in Maribor t
 {:.muted .small}
 Skills used: *Joomla, PHP, MySQL, (X)HTML, CSS*
 
-## Web Developer
+## PHP Web Developer
 
 {:.muted .timespan .small}
 April 2009 - December 2010
