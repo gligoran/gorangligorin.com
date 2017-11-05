@@ -105,9 +105,9 @@ Skills used: *(X)HTML, CSS, JavaScript*
 
 [empire24]: http://empire24.co
 [linkr]: http://lnkr.co
-[adacta]: http://www.adacta.si/
+[adacta]: https://www.adacta.si/
 [fnm]: http://www.fnm.uni-mb.si/
 [eclc2011]: http://eclc2011.fnm.uni-mb.si/
-[plenum]: http://www.plenum.si/
+[plenum]: https://www.plenum.si/
 [agito]: http://www.agito.si/
 [gfml]: http://www.gfm-ljutomer.si/

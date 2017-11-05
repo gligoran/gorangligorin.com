@@ -37,7 +37,7 @@ T4MVC.cs
 
 The only difference is how to set global ignore rules for each of them. I found these two great tutorials for this:
 
-- Mercurial (Hg): [geekswithblogs.net](http://geekswithblogs.net/rob/archive/2010/07/16/mercurial-hg-global-ignore-file-on-windows.aspx)
-- Git: [help.github.com](http://help.github.com/git-ignore/)
+- Mercurial (Hg): [geekswithblogs.net](https://geekswithblogs.net/rob/archive/2010/07/16/mercurial-hg-global-ignore-file-on-windows.aspx)
+- Git: [help.github.com](https://help.github.com/git-ignore/)
 
 UPDATE (16/11/2010): After using Hg for a while with my ASP.NET MVC projects I've added a few things to the ignore list.

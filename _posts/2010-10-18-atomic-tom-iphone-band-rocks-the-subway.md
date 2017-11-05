@@ -14,4 +14,4 @@ This YouTube clip has be sweeping the Internet lately. I'm not usually impressed
 
 I was so impressed by this I went to their [MySpace][at-ms] page and they're apparently not a YouTube one hit wonder. There's a couple of good songs there. I encourage you to give them a hear.
 
-[at-ms]: http://www.myspace.com/atomictom
+[at-ms]: https://www.myspace.com/atomictom

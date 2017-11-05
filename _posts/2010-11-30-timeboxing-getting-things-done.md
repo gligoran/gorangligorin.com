@@ -33,6 +33,6 @@ I also like to employ a technique I call **progressive timeboxing**. What I do i
 Timeboxing can be a very effective motivational tool when used correctly. By completing a session you also get a sense of achievement which boosts your motivation even further. I suggest you try it out and see if it suits you. I would of course like to hear what success you've reached while employing this technique. And if you came up with your own derivation of it don't feel hesitant to share :smiley:
 
 [img]: /images/timeboxing.jpg "Timeboxing"
-[sp]: http://www.stevepavlina.com/blog/2004/10/timeboxing/ "Timeboxing"
+[sp]: https://www.stevepavlina.com/blog/2004/10/timeboxing/ "Timeboxing"
 [pers]: /blog/time-is-a-perspective "Time Is a Perspective"
-[sp2]: http://www.stevepavlina.com/articles/overcoming-procrastination.htm "Overcoming Procrastination"
+[sp2]: https://www.stevepavlina.com/articles/overcoming-procrastination.htm "Overcoming Procrastination"

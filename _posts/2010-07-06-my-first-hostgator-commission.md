@@ -24,7 +24,7 @@ This money will probably go towards buying my own hosting as I'm currently leech
 
 All in all I am extremely happy about my first few bucks earned online :smiley:
 
-[hostgator]: http://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=gligoran
+[hostgator]: https://secure.hostgator.com/~affiliat/cgi-bin/affiliates/clickthru.cgi?id=gligoran
 [img-paypal-thumb]: /images/thumbs/hg-commission-paypal.png
 [img-paypal]: /images/hg-commission-paypal.png "PayPal HostGator Transaction"
 [img-hg-comm-thumb]: /images/thumbs/hg-commissions.png
@@ -33,6 +33,6 @@ All in all I am extremely happy about my first few bucks earned online :smiley:
 [img-hg]: /images/hg-commission-payouts.png "HostGator Commission Payouts"
 [img-email-thumb]: /images/thumbs/hg-commission-email.png
 [img-email]: /images/hg-commission-email.png "Email from PayPal"
-[aardvark]: http://vark.com/ "Aardvark"
-[hg-paid]: http://support.hostgator.com/articles/affiliates/when-and-how-often-will-i-be-paid
-[aspnet-mvc]: http://www.asp.net/mvc/ "ASP.NET MVC Framework"
+[aardvark]: https://vark.com/ "Aardvark"
+[hg-paid]: https://support.hostgator.com/articles/affiliates/when-and-how-often-will-i-be-paid
+[aspnet-mvc]: https://www.asp.net/mvc/ "ASP.NET MVC Framework"

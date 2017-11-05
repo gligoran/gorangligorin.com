@@ -3,8 +3,9 @@ layout: page
 title: Blog Archives
 ---
 
+{% assign reverse_posts = site.posts | reverse %}
 <div class="archives" itemscope itemtype="http://schema.org/Blog">
-    {% for post in site.posts reverse %}
+    {% for post in reverse_posts %}
         {% if post.layout == 'post' %}
             {% include archive_post.html %}
         {% endif %}

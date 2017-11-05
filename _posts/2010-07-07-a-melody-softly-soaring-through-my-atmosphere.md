@@ -14,4 +14,4 @@ This song is just amazing. I've been listening to it over the past few days and 
 
 Here are the [lyrics][smb-lyrics] as well, because if you're like me you'll be signing along in a jiffy :smiley:
 
-[smb-lyrics]: http://genius.com/death-cab-for-cutie-soul-meets-body-lyrics
+[smb-lyrics]: https://genius.com/death-cab-for-cutie-soul-meets-body-lyrics

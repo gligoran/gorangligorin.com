@@ -28,10 +28,10 @@ I didn't have a filter like this in my Google Analytics account yet, so I had to
 
 And that was it. The filter was set up and the traffic stats will be much more representative now.
 
-[ga]: http://www.google.com/analytics "Google Analytics"
+[ga]: https://www.google.com/analytics "Google Analytics"
 [img-ga-wp]: /images/ga-wp-previews.png "Wordpress previews in Google Analytics"
-[wp-aio]: http://wordpress.org/extend/plugins/all-in-one-webmaster/ "All in One Webmaster"
-[bwt]: http://www.bing.com/toolbox/webmaster/ "Bing Webmaster Center"
+[wp-aio]: https://wordpress.org/extend/plugins/all-in-one-webmaster/ "All in One Webmaster"
+[bwt]: https://www.bing.com/toolbox/webmaster/ "Bing Webmaster Center"
 [yahoo-se]: https://developer.yahoo.com/search/siteexplorer/ "Yahoo Site Explorer"
 [gwt]: https://www.google.com/webmasters/tools/ "Google Webmaster Tools"
 [img-ga-wp-addfilter]: /images/ga-wp-addfilter.png "Add filter in Google Analytics"

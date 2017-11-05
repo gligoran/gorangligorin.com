@@ -61,6 +61,6 @@ I was during my college days that I really got into programming. I switched from
 [arkanoid]: https://en.wikipedia.org/wiki/Arkanoid
 [snake]: https://en.wikipedia.org/wiki/Snake_(video_game)
 [gymnasium]: https://en.wikipedia.org/wiki/Gymnasium_(school)
-[fri]: http://www.fri.uni-lj.si/en/
+[fri]: https://www.fri.uni-lj.si/en/
 [img-uxmal]: /images/about/travel.jpg
 [img-karting]: /images/about/karting.jpg

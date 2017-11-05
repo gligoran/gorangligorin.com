@@ -18,6 +18,6 @@ All in all I'm quite happy with the result and I'd like to achieve the mentioned
 
 Do you jog? Let me know how you do it in the comments below.
 
-[mmr]: http://www.mapmyrun.com/
-[mmr-gg1]: http://www.mapmyrun.com/si/lendava/lendava-gg1-route-20599526
-[mmr-gg2]: http://www.mapmyrun.com/si/lendava/lendava-gg2-route-20076662
+[mmr]: https://www.mapmyrun.com/
+[mmr-gg1]: https://www.mapmyrun.com/si/lendava/lendava-gg1-route-20599526
+[mmr-gg2]: https://www.mapmyrun.com/si/lendava/lendava-gg2-route-20076662

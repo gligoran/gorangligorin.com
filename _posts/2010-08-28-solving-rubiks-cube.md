@@ -11,4 +11,4 @@ categories: [puzzles]
 Found a really cool site for solving Rubik's Cube. All the steps are animated, so it's quite easy to follow. [Check it out][guide].
 
 [img-rc]: /images/rubiks-cube.png "Rubik's Cube"
-[guide]: http://www.ryanheise.com/cube/beginner.html
+[guide]: https://www.ryanheise.com/cube/beginner.html

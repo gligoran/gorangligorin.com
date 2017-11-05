@@ -19,6 +19,6 @@ The weather was just great on Wednesday and with it being a work day there were 
 The real shock came yesterday though. I think there was not a muscle on and around my arms that wasn't sore. I couldn't even extend my arms fully. Oh and did I mention the sunburns? Got those too. But it was worth it. I started learning how to ride switch and did a few ollies. Buying my own board just jumped up quite a few places in my book. Got any suggestions?
 
 [img-planksee]: /images/planksee-wakepark.jpg "Wakeboarding at Planksee, Austria"
-[planksee]: http://www.wakepark-planksee.at/ "Wakepark Planksee, Austria"
+[planksee]: https://www.wakepark-planksee.at/ "Wakepark Planksee, Austria"
 [planksee-maps]: https://goo.gl/maps/6Af17vmYLgS2 "Planksee, Austria - Google Maps"
-[ows]: http://www.orlandowatersports.com/ "Orlando Watersports Complex"
+[ows]: https://www.orlandowatersports.com/ "Orlando Watersports Complex"

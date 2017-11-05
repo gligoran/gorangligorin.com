@@ -18,7 +18,7 @@ Hello there! Thanks for trying to reach out to me. My preferred method of commun
 **email:** <mailto:goran@gligorin.com> <br />
 **skype:** gligoran <br />
 **phone:** (+386) 41 550 088 <br />
-**website:** [gorangligorin.com](http://gorangligorin.com)
+**website:** [www.gorangligorin.com](https://www.gorangligorin.com)
 
 **address:** <br />
 Goran Gligorin <br />

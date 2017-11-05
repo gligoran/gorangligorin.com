@@ -34,6 +34,6 @@ Kranjčeva ulica 44 <br />
 9220 Lendava <br />
 Slovenia
 
-[fri]: http://www.fri.uni-lj.si/en/
+[fri]: https://www.fri.uni-lj.si/en/
 [gfml]: http://www.gfml.si/
 [dos1]: http://www.dos1-lendava.si/

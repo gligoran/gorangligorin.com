@@ -16,4 +16,4 @@ As you can see school has (again) taken over my life and I really just want to b
 
 I'll probably take the next few hours for writing and hopefully I'll pump out some good content. I'll post these over the next few weeks. So stay tuned.
 
-[tc10]: href="http://www.challenge.co "The Challenge"
+[tc10]: https://www.challenge.co "The Challenge"

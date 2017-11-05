@@ -124,7 +124,7 @@ You'll need to change *`NEWURL`* with the URL that you want the old URL to be po
 ```xml
 <rule name="Moved1" stopProcessing="true">
     <match url="^old/?$" ignoreCase="true" />
-    <action type="Redirect" url="http://www.example.com/new/" />
+    <action type="Redirect" url="https://www.example.com/new/" />
 </rule>
 ```
 
@@ -145,10 +145,10 @@ As 410 is stronger then 404 your 410s should start disappearing from the Crawl E
 *For testing your Regular Expression you can use [Regular Expression Test Tool][regex-test].*
 
 [gwt]: https://www.google.com/webmasters/tools/ "Google Webmaster Tools"
-[gb-fetch]: http://www.google.com/support/webmasters/bin/answer.py?answer=158587
-[http-codes]: http://www.google.com/support/webmasters/bin/answer.py?answer=40132 "HTTP status codes"
-[query]: http://en.wikipedia.org/wiki/Query_string "Query string"
-[regex]: http://en.wikipedia.org/wiki/Regular_expression
-[url-removal]: http://googlewebmastercentral.blogspot.com/2010/05/url-removal-explained-part-iv-tracking.html
-[rw-rules]: http://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/
+[gb-fetch]: https://www.google.com/support/webmasters/bin/answer.py?answer=158587
+[http-codes]: https://www.google.com/support/webmasters/bin/answer.py?answer=40132 "HTTP status codes"
+[query]: https://en.wikipedia.org/wiki/Query_string "Query string"
+[regex]: https://en.wikipedia.org/wiki/Regular_expression
+[url-removal]: https://googlewebmastercentral.blogspot.com/2010/05/url-removal-explained-part-iv-tracking.html
+[rw-rules]: https://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/
 [regex-test]: https://regex101.com/

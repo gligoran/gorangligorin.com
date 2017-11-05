@@ -19,5 +19,5 @@ So what does this mean? It means I've only got one thing left to reach the end o
 Just to keep this a wholesome post let add that this is the only part (finish school) of my [New Year's resolution][nyr] I've been working on. With exams behind me it now makes it a lot easier to focus on other goals. My parents were kind enough to help me through the past few months financially, but getting a job is now quite high on my priority list. I'll also start working out as it started to warm up outside. Socializing is probably the last on my list, but I've got to make sacrifices somewhere, don't I?
 
 [img]: /images/exams-done.jpg
-[rc]: http://en.wikipedia.org/wiki/Recommender_system "Recommender Systems"
+[rc]: https://en.wikipedia.org/wiki/Recommender_system "Recommender Systems"
 [nyr]: /blog/2011-new-years-resolution "2011 New Year's Resolution"

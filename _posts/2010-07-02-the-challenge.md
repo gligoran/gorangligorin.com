@@ -18,7 +18,7 @@ But Ed Dale (the funny looking Aussie guy from the video) changed things around 
 
 The first pre-challenge video was up yesterday. It's about [UStream][]. As I've done preseason for the 2009 30DC and even more so because I'm a computer geek, I already know about this. So I'll watch pre-challenge just to see what's new, but the part I'm really looking forward to at the moment is Module 1. Can't wait.
 
-[google]: http://en.wikipedia.org/wiki/Google "Wikipedia - Google"
-[altavista]: http://www.altavista.com/ "AltaVista"
-[tc]: http://www.challenge.co
-[ustream]: http://www.ustream.tv/
+[google]: https://en.wikipedia.org/wiki/Google "Wikipedia - Google"
+[altavista]: https://www.altavista.com/ "AltaVista"
+[tc]: https://www.challenge.co
+[ustream]: https://www.ustream.tv/

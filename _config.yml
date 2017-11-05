@@ -18,14 +18,14 @@ sass:
 post_ext: md
 page_ext: md
 
-gems:
+plugins:
   - github-pages
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-mentions
-  - jemoji # http://www.emoji-cheat-sheet.com/
+  - jemoji # https://www.emoji-cheat-sheet.com/
 
 exclude:
   - gulpfile.js
@@ -40,11 +40,11 @@ exclude:
 title: "Goran Gligorin"
 description: "Goran Gligorin's little piece of the Internet"
 keywords: "goran gligorin, goran, gligorin, blog, cv, curriculum vitae, developer, web developer, c# developer, .net developer, entrepreneur"
-url: http://gorangligorin.com
+url: https://www.gorangligorin.com
 baseurl: ""
 
 google_analytics_tracking_id: UA-9914927-3
-# repo: http://github.com/gligoran/gorangligorin.com
+# repo: https://github.com/gligoran/gorangligorin.com
 disqus_short_name: "gorangligorin"
 disqus_show_comment_count: true
 
@@ -57,7 +57,7 @@ author:
   image: /images/gorangligorin-bw.png
   birthdate: 1986-09-24
   email: goran@gligorin.com
-  url: http://gorangligorin.com
+  url: https://www.gorangligorin.com
   github: gligoran
   twitter: gligoran
   facebook: goran.gligorin
