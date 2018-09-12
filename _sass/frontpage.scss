@@ -6,22 +6,7 @@ body.frontpage
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("/images/background/hd.png");
-
-    @media screen and (min-width: 2561px)
-    {
-        background-image: url("/images/background/uhd.png");
-    }
-
-    @media screen and (min-width: 1921px)
-    {
-        background-image: url("/images/background/wqhd.png");
-    }
-
-    @media screen and (min-width: 1281px)
-    {
-        background-image: url("/images/background/fhd.png");
-    }
+    background-image: url("/images/background/san-gimignano.jpg");
 
     .overlay
     {

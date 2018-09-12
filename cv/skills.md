@@ -8,16 +8,18 @@ Listed below are some of the hats I've learned to wear over the years and the re
 
 ## Web Developer
 
-{% include stars/4.html %} C#, .NET Framework, ASP.NET MVC, ASP.NET WebApi 2 <br />
 {% include stars/4.html %} HTML5/(X)HTML <br />
+{% include stars/4.html %} JavaScript, TypeScript <br />
+{% include stars/4.html %} AngularJS, Angular 2+ <br />
+{% include stars/4.html %} Git, Git Flow <br />
+{% include stars/4.html %} npm, bower, gulp <br />
 {% include stars/3.5.html %} CSS3, LESS, SCSS <br />
-{% include stars/3.5.html %} JavaScript, AngularJS, jQuery <br />
-{% include stars/3.5.html %} Visual Studio <br />
-{% include stars/3.html %} Git, Git Flow, Mercurial (Hg) <br />
+{% include stars/3.5.html %} Visual Studio, Visual Studio Code <br />
+{% include stars/3.5.html %} C#, .NET Framework, ASP.NET MVC, ASP.NET WebApi 2 <br />
 {% include stars/3.html %} MSSQL, Azure SQL, SSMS, LINQPad <br />
-{% include stars/3.html %} npm, bower, gulp <br />
+{% include stars/3.html %} webpack, docker <br />
 {% include stars/2.5.html %} PHP, MySQL <br />
-{% include stars/2.5.html %} Visual Studio Team Services (CI) <br />
+{% include stars/2.5.html %} Visual Studio Team Services (CI), GitLab CI <br />
 {% include stars/1.5.html %} Adobe Photoshop <br />
 {% include stars/1.5.html %} Joomla <br />
 {% include stars/1.5.html %} Jekyll <br />

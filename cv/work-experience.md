@@ -4,12 +4,24 @@ title: Work experience
 comments: false
 ---
 
+## Frontend Web Developer
+
+{:.muted .timespan .small}
+May 2016 - Present
+
+**[D.Labs d.o.o.][dlabs]**
+
+At D.Labs I've worked on a number of projects for our biggest client - Business of Fashion. These projects included BoF Education, an online course platform, BoF Professional, a content subscription platform, hybrid mobile app for iOS, and BoF Community. During this time I've used various programming languages like JavaScript, TypeScript, HTML, (S)CSS, Twig, and technologies like AngularJS, Angular (2, 4, 5, and 6), Ionic 2, Angular Material, Twitter Bootstrap (3 and 4), gulp, webpack, git, npm, docker, REST, GraphQL + Apollo, and many others.
+
+{:.muted .small}
+Skills used: *JavaScript, TypeScript, HTML5, CSS3, SCSS, AngularJS, Angular 2 - 6, Bootstrap, Angular Material, git, npm, bower, gulp, webpack, docker*
+
 ## Creator and Developer
 
 {:.muted .timespan .small}
-November 2014 - Present
+November 2014 - June 2017
 
-**[Empire24.co][empire24]** & **[Linkr][linkr]**
+**Empire24.co** & **Linkr**
 
 Empire24.co is brand I created as a platform for releasing digital services and products. The first product under this brand is a software as a service (SaaS) called Linkr. It enables users to create link with dynamic destinations and with it helps them better serve their audiences.
 
@@ -103,8 +115,9 @@ As part of the school's computer lab team I co-developed and then helped maintai
 {:.muted .small}
 Skills used: *(X)HTML, CSS, JavaScript*
 
-[empire24]: http://empire24.co
-[linkr]: http://lnkr.co
+[dlabs]: https://dlabs.si
+[empire24]: https://empire24.co
+[linkr]: https://lnkr.co
 [adacta]: https://www.adacta.si/
 [fnm]: http://www.fnm.uni-mb.si/
 [eclc2011]: http://eclc2011.fnm.uni-mb.si/
