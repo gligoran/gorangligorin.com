@@ -1,0 +1,49 @@
+name: jekyll
+
+on: push
+
+jobs:
+  build-and-deploy:
+    name: build and deploy
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: "2.x"
+
+      - name: cache gems
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-build-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: install gems
+        run: |
+          bundle config path vendor/bundle
+          bundle install
+
+      - name: build jekyll
+        run: bundle exec jekyll build
+
+      - name: check links
+        run: bundle exec htmlproofer ./_site --external_only --only-4xx --check-favicon --check-html
+
+      - name: deploy
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: _site
+          keep_history: true
+          allow_empty_commit: false
+          fqdn: www.gorangligorin.com
+          commit_message: ${{ github.event.head_commit.message }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
