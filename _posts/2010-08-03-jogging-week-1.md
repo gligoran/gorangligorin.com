@@ -6,7 +6,7 @@ comments: true
 categories: [sports]
 ---
 
-Yesterday was the 8th day since I started jogging. I started on Monday, the 26th of July, with lap that somewhat encircles my home village and is 4.65 kilometers in length. That's 2.89 miles for you imperial readers. I've made a map of the route on [MapMyRun][mmr] and named it [Lendava GG2][mmr-gg2]. From Tuesday through Saturday continued with a lap that's a bit smaller - [Lendava GG1][mmr-gg1].
+Yesterday was the 8th day since I started jogging. I started on Monday, the 26th of July, with lap that somewhat encircles my home village and is 4.65 kilometers in length. That's 2.89 miles for you imperial readers. I've made a map of the route on [MapMyRun][mmr] and named it Lendava GG2. From Tuesday through Saturday continued with a lap that's a bit smaller - Lendava GG1.
 
 I said to myself that I wouldn't stop moving the entire length of the lap. I was either going to jog or walk. The walking parts are a kind of pauses between jogging sessions.
 
@@ -19,5 +19,3 @@ All in all I'm quite happy with the result and I'd like to achieve the mentioned
 Do you jog? Let me know how you do it in the comments below.
 
 [mmr]: https://www.mapmyrun.com/
-[mmr-gg1]: https://www.mapmyrun.com/si/lendava/lendava-gg1-route-20599526
-[mmr-gg2]: https://www.mapmyrun.com/si/lendava/lendava-gg2-route-20076662
