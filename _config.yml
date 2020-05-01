@@ -19,7 +19,6 @@ post_ext: md
 page_ext: md
 
 plugins:
-  - github-pages
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-feed
@@ -28,20 +27,29 @@ plugins:
   - jemoji # https://www.emoji-cheat-sheet.com/
 
 exclude:
-  - gulpfile.js
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - .remarkrc
-  - vendor
   - README.md
   - CNAME
 
 # seo settings
 title: "Goran Gligorin"
+email: goran@gligorin.com
 description: "Goran Gligorin's little piece of the Internet"
 keywords: "goran gligorin, goran, gligorin, blog, cv, curriculum vitae, developer, web developer, c# developer, .net developer, entrepreneur"
 url: https://www.gorangligorin.com
 baseurl: ""
+twitter_username: jekyllrb
+github_username: jekyll
 
 google_analytics_tracking_id: UA-9914927-3
 # repo: https://github.com/gligoran/gorangligorin.com
