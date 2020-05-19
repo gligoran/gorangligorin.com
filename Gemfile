@@ -7,8 +7,8 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
-  gem "jekyll-mentions"
+  gem "jekyll-mentions", ">= 1.6.0"
   gem "jekyll-seo-tag"
-  gem "jemoji"
+  gem "jemoji", ">= 0.12.0"
 end
 
