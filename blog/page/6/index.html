@@ -126,7 +126,7 @@
 
 <p>Rewrite rules are a set of rules that tell your web server what to do with some URLs. These rules can be quite complex. But, as you’ll only be dealing with the URLs from the Crawl Error report, these ones will be pretty simple.</p>
 
-<p>First thing you need to do is see if you have a <code class="highlighter-rouge">rewrite</code> section in your web.config file. It should be in <code class="highlighter-rouge">system.webserver</code> which is inside the <code class="highlighter-rouge">configuration</code> section. If you’re missing any part of this just add it. And also add a <code class="highlighter-rouge">rules</code> section inside the <code class="highlighter-rouge">rewrite</code> one. This is where all your rules will go. Your web.config should look something like this:</p>
+<p>First thing you need to do is see if you have a <code class="language-plaintext highlighter-rouge">rewrite</code> section in your web.config file. It should be in <code class="language-plaintext highlighter-rouge">system.webserver</code> which is inside the <code class="language-plaintext highlighter-rouge">configuration</code> section. If you’re missing any part of this just add it. And also add a <code class="language-plaintext highlighter-rouge">rules</code> section inside the <code class="language-plaintext highlighter-rouge">rewrite</code> one. This is where all your rules will go. Your web.config should look something like this:</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;configuration&gt;</span>
     <span class="c">&lt;!-- ... --&gt;</span>
@@ -150,8 +150,8 @@
 <p>To determine which type of URL it is let’s look at 2 examples:</p>
 
 <ol>
-  <li><code class="highlighter-rouge">www.fakestore.com/jeans/?item=24</code></li>
-  <li><code class="highlighter-rouge">www.fakestore.com/long-jeans/</code></li>
+  <li><code class="language-plaintext highlighter-rouge">www.fakestore.com/jeans/?item=24</code></li>
+  <li><code class="language-plaintext highlighter-rouge">www.fakestore.com/long-jeans/</code></li>
 </ol>
 
 <p>Both of these URLs should return a 404 HTTP status code. Our fake store doesn’t sell jeans with the id 24 any more. Neither do they any longer hold long jeans. The first example shows that query string is very important. You wouldn’t want to remove the title page of jeans department, just those particular jeans. On the contrary that’s exactly what you’d like to achieve in example 2. Today’s websites with the pretty URL movement spreading all through the web, you’re probably be dealing with example 2 like URLs a lot more.</p>
@@ -166,16 +166,16 @@
 <span class="nt">&lt;/rule&gt;</span>
 </code></pre></div></div>
 
-<p>As IIS7 does not allow multiple rules with the same name change the <em><code class="highlighter-rouge">X</code></em> in <code class="highlighter-rouge">GoneX</code> with some unique string. I usually use consecutive numbers (<code class="highlighter-rouge">Gone1</code>, <code class="highlighter-rouge">Gone2</code>, …).</p>
+<p>As IIS7 does not allow multiple rules with the same name change the <em><code class="language-plaintext highlighter-rouge">X</code></em> in <code class="language-plaintext highlighter-rouge">GoneX</code> with some unique string. I usually use consecutive numbers (<code class="language-plaintext highlighter-rouge">Gone1</code>, <code class="language-plaintext highlighter-rouge">Gone2</code>, …).</p>
 
-<p>You’ll also need to replace <em><code class="highlighter-rouge">URL</code></em> with the URL you got from Crawl Errors report without the domain part. So if you look back at the second example you’ll only need the <code class="highlighter-rouge">long-jeans/</code> part.</p>
+<p>You’ll also need to replace <em><code class="language-plaintext highlighter-rouge">URL</code></em> with the URL you got from Crawl Errors report without the domain part. So if you look back at the second example you’ll only need the <code class="language-plaintext highlighter-rouge">long-jeans/</code> part.</p>
 
 <p>As rewrite rules use <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expressions</a> for matching URLs you’ll need to be mindful of a couple of thing:</p>
 
 <ul>
-  <li>Make sure that the <code class="highlighter-rouge">^</code> and the <code class="highlighter-rouge">/?$</code> remain as they are. The <code class="highlighter-rouge">^</code> and <code class="highlighter-rouge">$</code> mark the start and the end of the string respectively. And the <code class="highlighter-rouge">/?</code> says that there is an optional slash at the end.</li>
-  <li>Leave out the slash at the end of the URL if there is one. <code class="highlighter-rouge">www.fakestroe.com/long-jeans</code> and <code class="highlighter-rouge">www.fakestore.com/long-jeans/</code> are technically 2 different URLs, but people might type in one or another. That’s why these rules contain a <code class="highlighter-rouge">/?</code> at the end.</li>
-  <li>You’ll also need to escape all the meta characters. The most common ones in URLs are <code class="highlighter-rouge">.</code> <code class="highlighter-rouge">-</code> <code class="highlighter-rouge">+</code> <code class="highlighter-rouge">(</code> and <code class="highlighter-rouge">)</code>. To escape a character you need a backslash in front of it.</li>
+  <li>Make sure that the <code class="language-plaintext highlighter-rouge">^</code> and the <code class="language-plaintext highlighter-rouge">/?$</code> remain as they are. The <code class="language-plaintext highlighter-rouge">^</code> and <code class="language-plaintext highlighter-rouge">$</code> mark the start and the end of the string respectively. And the <code class="language-plaintext highlighter-rouge">/?</code> says that there is an optional slash at the end.</li>
+  <li>Leave out the slash at the end of the URL if there is one. <code class="language-plaintext highlighter-rouge">www.fakestroe.com/long-jeans</code> and <code class="language-plaintext highlighter-rouge">www.fakestore.com/long-jeans/</code> are technically 2 different URLs, but people might type in one or another. That’s why these rules contain a <code class="language-plaintext highlighter-rouge">/?</code> at the end.</li>
+  <li>You’ll also need to escape all the meta characters. The most common ones in URLs are <code class="language-plaintext highlighter-rouge">.</code> <code class="language-plaintext highlighter-rouge">-</code> <code class="language-plaintext highlighter-rouge">+</code> <code class="language-plaintext highlighter-rouge">(</code> and <code class="language-plaintext highlighter-rouge">)</code>. To escape a character you need a backslash in front of it.</li>
 </ul>
 
 <p>With all that said here’s how the above snippet would look like with example 2:</p>
@@ -186,13 +186,13 @@
 <span class="nt">&lt;/rule&gt;</span>
 </code></pre></div></div>
 
-<p>As you can see our rule is also case insensitive. If your web server now receives a request for a URL and matches it with one of your rules it will return a 410 HTTP status code. You can also change the status description by altering the <code class="highlighter-rouge">statusDescription</code> attribute of the <code class="highlighter-rouge">action</code> tag. This message will give your visitors an explanation for the error.</p>
+<p>As you can see our rule is also case insensitive. If your web server now receives a request for a URL and matches it with one of your rules it will return a 410 HTTP status code. You can also change the status description by altering the <code class="language-plaintext highlighter-rouge">statusDescription</code> attribute of the <code class="language-plaintext highlighter-rouge">action</code> tag. This message will give your visitors an explanation for the error.</p>
 
 <p>You’ll need to create a separate rule for each query string independent URL that points to a no longer existing page.</p>
 
 <h3 id="query-string-based-urls">Query string based URLs</h3>
 
-<p>Now let’s look at URLs which hold important information in the query string like our example 1. Here you won’t need separate rules for each URL. This is because the <code class="highlighter-rouge">URL</code> attribute in the match tag is only matching the URL without the domain and the query string. So there will only be one rule which will match all URLs:</p>
+<p>Now let’s look at URLs which hold important information in the query string like our example 1. Here you won’t need separate rules for each URL. This is because the <code class="language-plaintext highlighter-rouge">URL</code> attribute in the match tag is only matching the URL without the domain and the query string. So there will only be one rule which will match all URLs:</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"GoneQueryStrings"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">".*"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
@@ -203,23 +203,23 @@
 <span class="nt">&lt;/rule&gt;</span>
 </code></pre></div></div>
 
-<p>Place this rule anywhere amongst your previous rules. You’ll notice the <code class="highlighter-rouge">.*</code> in the URL attribute. Regular expression <code class="highlighter-rouge">.</code> mathces any character and the <code class="highlighter-rouge">*</code> says that there my be 0 of more such characters. This matching any URL. As you don’t want all the URLs on our site to start returning 410s you need some conditions. These conditions look like this:</p>
+<p>Place this rule anywhere amongst your previous rules. You’ll notice the <code class="language-plaintext highlighter-rouge">.*</code> in the URL attribute. Regular expression <code class="language-plaintext highlighter-rouge">.</code> mathces any character and the <code class="language-plaintext highlighter-rouge">*</code> says that there my be 0 of more such characters. This matching any URL. As you don’t want all the URLs on our site to start returning 410s you need some conditions. These conditions look like this:</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;add</span> <span class="na">input=</span><span class="s">"{QUERY_STRING}"</span> <span class="na">pattern=</span><span class="s">"QUERYSTRING"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p>Now all you have to do is to replace the <em><code class="highlighter-rouge">QUERYSTRING</code></em> in the <code class="highlighter-rouge">pattern</code> attribute with the query string from your URL and insert the condition in the above rule. Don’t forget about escaping the query string. You can have as many conditions as you want inside this rule. If any of these conditions match the query string of the URL request received by your web server it will fire up the action the return a 410 HTTP status code.</p>
+<p>Now all you have to do is to replace the <em><code class="language-plaintext highlighter-rouge">QUERYSTRING</code></em> in the <code class="language-plaintext highlighter-rouge">pattern</code> attribute with the query string from your URL and insert the condition in the above rule. Don’t forget about escaping the query string. You can have as many conditions as you want inside this rule. If any of these conditions match the query string of the URL request received by your web server it will fire up the action the return a 410 HTTP status code.</p>
 
 <h2 id="301--moved-permanently">301 - Moved permanently</h2>
 
 <p>If you find a URL in your Crawl Errors report that has change (moved) you should use a 301 redirect to automatically redirect your users and Google to the new URL.</p>
 
-<p>The difference between a 410 and a 301 rule in your web.config is in the <code class="highlighter-rouge">action</code> tag. For 301 you’ll need to use:</p>
+<p>The difference between a 410 and a 301 rule in your web.config is in the <code class="language-plaintext highlighter-rouge">action</code> tag. For 301 you’ll need to use:</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;action</span> <span class="na">type=</span><span class="s">"Redirect"</span> <span class="na">url=</span><span class="s">"NEWURL"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p>You’ll need to change <em><code class="highlighter-rouge">NEWURL</code></em> with the URL that you want the old URL to be pointing at. The new URL must be a full URL. So let’s look at the example where <code class="highlighter-rouge">www.example.com/old/</code> is redirected to <code class="highlighter-rouge">www.example.com/new/</code>:</p>
+<p>You’ll need to change <em><code class="language-plaintext highlighter-rouge">NEWURL</code></em> with the URL that you want the old URL to be pointing at. The new URL must be a full URL. So let’s look at the example where <code class="language-plaintext highlighter-rouge">www.example.com/old/</code> is redirected to <code class="language-plaintext highlighter-rouge">www.example.com/new/</code>:</p>
 
 <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;rule</span> <span class="na">name=</span><span class="s">"Moved1"</span> <span class="na">stopProcessing=</span><span class="s">"true"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;match</span> <span class="na">url=</span><span class="s">"^old/?$"</span> <span class="na">ignoreCase=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
@@ -325,7 +325,7 @@
 
 <p><img src="/images/ga-wp-previews.png" alt="Wordpress previews in Google Analytics" title="Wordpress previews in Google Analytics" /></p>
 
-<p>The <code class="highlighter-rouge">p=&lt;number&gt;&amp;preview=true</code> part of the highlighted URLs was the key. Apparently the <a href="https://wordpress.org/extend/plugins/all-in-one-webmaster/" title="All in One Webmaster">WordPress plugin</a> I’ve got installed for Google Analytics and stuff like <a href="https://www.bing.com/toolbox/webmaster/" title="Bing Webmaster Center">Bing Webmaster Tools</a>, <a href="https://developer.yahoo.com/search/siteexplorer/" title="Yahoo Site Explorer">Yahoo Site Explorer</a>, <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a> added the JavaScript code that counts visits even in previews. This wasn’t OK, because it blurs the real traffic results.</p>
+<p>The <code class="language-plaintext highlighter-rouge">p=&lt;number&gt;&amp;preview=true</code> part of the highlighted URLs was the key. Apparently the <a href="https://wordpress.org/extend/plugins/all-in-one-webmaster/" title="All in One Webmaster">WordPress plugin</a> I’ve got installed for Google Analytics and stuff like <a href="https://www.bing.com/toolbox/webmaster/" title="Bing Webmaster Center">Bing Webmaster Tools</a>, <a href="https://developer.yahoo.com/search/siteexplorer/" title="Yahoo Site Explorer">Yahoo Site Explorer</a>, <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a> added the JavaScript code that counts visits even in previews. This wasn’t OK, because it blurs the real traffic results.</p>
 
 <p>So I had two choices. Either change some PHP code of WordPress or the plugin or make Google Analytics discard the preview visits. Neither of these choices isn’t perfect. The problem with the first one is that when WordPress or the plugin get updated my code will be gone and I’d have to do it all over again. The second one on the other hand only works for Goolge Analytics. If you’re using any other traffic analysis services or tools, you’d have to do this for every one of them. I chose the second option as Google Analytics is my most used tool for traffic statistics.</p>
 
@@ -335,7 +335,7 @@
 
 <p><img src="/images/ga-wp-addfilter.png" alt="Add filter in Google Analytics" title="Add filter in Google Analytics" /></p>
 
-<p>I didn’t have a filter like this in my Google Analytics account yet, so I had to create one. The was to be a custom filter that would exclude all of the URLs that have <code class="highlighter-rouge">preview=true</code> in them. I called it <em>Discard Previews</em> and when I filled out the <em>Add filter</em> form it looked like this:</p>
+<p>I didn’t have a filter like this in my Google Analytics account yet, so I had to create one. The was to be a custom filter that would exclude all of the URLs that have <code class="language-plaintext highlighter-rouge">preview=true</code> in them. I called it <em>Discard Previews</em> and when I filled out the <em>Add filter</em> form it looked like this:</p>
 
 <p><img src="/images/ga-wp-filter.png" alt="Discard Wordpress previews filter for Google Analytics" title="Discard Wordpress previews filter for Google Analytics" /></p>
 

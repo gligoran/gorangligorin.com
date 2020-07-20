@@ -104,7 +104,7 @@
 
 <p><img src="/images/ga-wp-previews.png" alt="Wordpress previews in Google Analytics" title="Wordpress previews in Google Analytics" /></p>
 
-<p>The <code class="highlighter-rouge">p=&lt;number&gt;&amp;preview=true</code> part of the highlighted URLs was the key. Apparently the <a href="https://wordpress.org/extend/plugins/all-in-one-webmaster/" title="All in One Webmaster">WordPress plugin</a> I’ve got installed for Google Analytics and stuff like <a href="https://www.bing.com/toolbox/webmaster/" title="Bing Webmaster Center">Bing Webmaster Tools</a>, <a href="https://developer.yahoo.com/search/siteexplorer/" title="Yahoo Site Explorer">Yahoo Site Explorer</a>, <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a> added the JavaScript code that counts visits even in previews. This wasn’t OK, because it blurs the real traffic results.</p>
+<p>The <code class="language-plaintext highlighter-rouge">p=&lt;number&gt;&amp;preview=true</code> part of the highlighted URLs was the key. Apparently the <a href="https://wordpress.org/extend/plugins/all-in-one-webmaster/" title="All in One Webmaster">WordPress plugin</a> I’ve got installed for Google Analytics and stuff like <a href="https://www.bing.com/toolbox/webmaster/" title="Bing Webmaster Center">Bing Webmaster Tools</a>, <a href="https://developer.yahoo.com/search/siteexplorer/" title="Yahoo Site Explorer">Yahoo Site Explorer</a>, <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools">Google Webmaster Tools</a> added the JavaScript code that counts visits even in previews. This wasn’t OK, because it blurs the real traffic results.</p>
 
 <p>So I had two choices. Either change some PHP code of WordPress or the plugin or make Google Analytics discard the preview visits. Neither of these choices isn’t perfect. The problem with the first one is that when WordPress or the plugin get updated my code will be gone and I’d have to do it all over again. The second one on the other hand only works for Goolge Analytics. If you’re using any other traffic analysis services or tools, you’d have to do this for every one of them. I chose the second option as Google Analytics is my most used tool for traffic statistics.</p>
 
@@ -114,7 +114,7 @@
 
 <p><img src="/images/ga-wp-addfilter.png" alt="Add filter in Google Analytics" title="Add filter in Google Analytics" /></p>
 
-<p>I didn’t have a filter like this in my Google Analytics account yet, so I had to create one. The was to be a custom filter that would exclude all of the URLs that have <code class="highlighter-rouge">preview=true</code> in them. I called it <em>Discard Previews</em> and when I filled out the <em>Add filter</em> form it looked like this:</p>
+<p>I didn’t have a filter like this in my Google Analytics account yet, so I had to create one. The was to be a custom filter that would exclude all of the URLs that have <code class="language-plaintext highlighter-rouge">preview=true</code> in them. I called it <em>Discard Previews</em> and when I filled out the <em>Add filter</em> form it looked like this:</p>
 
 <p><img src="/images/ga-wp-filter.png" alt="Discard Wordpress previews filter for Google Analytics" title="Discard Wordpress previews filter for Google Analytics" /></p>
 
