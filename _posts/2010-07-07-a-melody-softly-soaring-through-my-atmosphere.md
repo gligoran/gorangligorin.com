@@ -12,6 +12,6 @@ categories: [music]
 
 This song is just amazing. I've been listening to it over the past few days and I still can not get enough. Especially the _para para pa pa..._ part gets me. The song is a part of their Plans album.
 
-Here are the [lyrics][smb-lyrics] as well, because if you're like me you'll be signing along in a jiffy :smiley:
+Here are the [lyrics][smb-lyrics]{:data-proofer-ignore=""} as well, because if you're like me you'll be signing along in a jiffy :smiley:
 
 [smb-lyrics]: https://genius.com/Death-cab-for-cutie-soul-meets-body-lyrics
