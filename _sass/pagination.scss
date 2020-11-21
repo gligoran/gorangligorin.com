@@ -9,30 +9,37 @@
   font-family: arial;
   text-transform: uppercase;
   border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-  div {
-    display: inline-block;
-    width: calc(100% / 2);
+  .link {
+    flex: 1 1 0px;
+    display: flex;
+    align-items: center;
 
+    i,
     a {
+      display: block;
       color: #333;
     }
 
-    &.previous a:before {
-      content: '\f060';
-      font-family: FontAwesome;
-      font-weight: normal;
-      padding-right: 5px;
+    &--previous {
+      justify-content: flex-start;
+
+      &,
+      & i {
+        margin-right: 5px;
+      }
     }
 
-    &.next {
+    &--next {
+      justify-content: flex-end;
       text-align: right;
 
-      a:after {
-        content: '\f061';
-        font-family: FontAwesome;
-        font-weight: normal;
-        padding-left: 5px;
+      &,
+      & i {
+        margin-left: 5px;
       }
     }
   }
