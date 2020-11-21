@@ -1,0 +1,26 @@
+{
+  "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com/)",
+  "bugs": {
+    "url": "https://github.com/gligoran/gorangligorin.com/issues"
+  },
+  "dependencies": {},
+  "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
+  "devDependencies": {
+    "prettier": "^2.2.0"
+  },
+  "homepage": "https://github.com/gligoran/gorangligorin.com#readme",
+  "license": "ISC",
+  "main": "index.html",
+  "name": "gorangligorin.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gligoran/gorangligorin.com.git"
+  },
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "format": "prettier --config .prettierrc --check .",
+    "format:fix": "npm run format -- --write",
+    "wipe": "rm -rf node_modules .jekyll-cache .sass-cache dist _site workers-site/node_modules workers-site/worker"
+  },
+  "version": "1.0.0"
+}
