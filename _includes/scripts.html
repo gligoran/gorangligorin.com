@@ -1,36 +1,34 @@
 {% include scripts/ga.html %}
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-buttons.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-media.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script> src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 <script id="dsq-count-scr" src="//gorangligorin.disqus.com/count.js" async></script>
 
 <script src="/js/links.js"></script>
 
 <script>
-	$(document).ready(function() {
-		$(".fancybox")
-            .attr("rel", "gallery")
-            .fancybox({
-                padding: 0,
-                fitToView: true,
-                autoSize: true
-            });
+  $(document).ready(function() {
+    $(".fancybox")
+      .attr('data-fancybox', 'gallery')
+      .attr('data-caption', function() { return $(this).attr('title') })
+      .fancybox({
+        padding: 0,
+        fitToView: true,
+        autoSize: true
+      });
 
-        $('.entry-content p:not(.gallery) img:not(.emoji)').each(function(i) {
-        	var alt = this.alt;
-        	var parent = $(this).parent();
+      $('.entry-content p:not(.gallery) img:not(.emoji)').each(function(i) {
+        var alt = this.alt;
+        var parent = $(this).parent();
 
-        	if (alt != '') {
-        		var element = $(this);
-        		if (parent.is('a')) {
-        			element = parent;
-        		}
-        		element.after('<span class="caption">'+alt+'</span>');
-        	}
-        });
+        if (alt != '') {
+          var element = $(this);
+          if (parent.is('a')) {
+            element = parent;
+          }
+          element.after('<span class="caption">'+alt+'</span>');
+        }
+      });
     });
 </script>
