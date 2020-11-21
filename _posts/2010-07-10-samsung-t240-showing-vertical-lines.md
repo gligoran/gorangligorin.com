@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Samsung T240 Showing Vertical Lines"
+title: 'Samsung T240 Showing Vertical Lines'
 date: 2010-07-10
 comments: true
 categories: [tech]

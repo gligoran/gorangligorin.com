@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The (30 Day) Challenge"
+title: 'The (30 Day) Challenge'
 date: 2010-07-02
 comments: true
 categories: [internet marketing]
@@ -14,11 +14,11 @@ So there I was confused as ever and ready to give up. But then, surfing YouTube 
 
 Well the summer is here and I'm ready to rumble. The thing that makes 30DC (30 Day Challenge) different from all the other I've encountered is that they do it fresh every year. They film new videos and update their techniques. They used to do this in August. So my plan was to go through 2009 videos first and when August comes I'll be ready with lots of questions and ideas and I won't be the biggest newbie, so it'll be easier to follow.
 
-But Ed Dale (the funny looking Aussie guy from the video) changed things around a lot this year. First he dropped the *30 Day* part from the name. So now it's just called [The Challenge][tc]. But this wasn't just the name change. The Challenge isn't a thirty day thing anymore. There will be 7 modules and one pre-challenge module. Each of these modules will take 7 days and between individual modules there will be 7 days off. Ed says each part will take only 30 minutes to watch the video and then take action. I'm a bit skeptical about that, but we'll see. So 8 modules x 7 parts in a module x 30 minutes per part gives us only 28 hours of work. Well hell, I though, I have a lot more time than that - I'll give it a go.
+But Ed Dale (the funny looking Aussie guy from the video) changed things around a lot this year. First he dropped the _30 Day_ part from the name. So now it's just called [The Challenge][tc]. But this wasn't just the name change. The Challenge isn't a thirty day thing anymore. There will be 7 modules and one pre-challenge module. Each of these modules will take 7 days and between individual modules there will be 7 days off. Ed says each part will take only 30 minutes to watch the video and then take action. I'm a bit skeptical about that, but we'll see. So 8 modules x 7 parts in a module x 30 minutes per part gives us only 28 hours of work. Well hell, I though, I have a lot more time than that - I'll give it a go.
 
 The first pre-challenge video was up yesterday. It's about [UStream][]. As I've done preseason for the 2009 30DC and even more so because I'm a computer geek, I already know about this. So I'll watch pre-challenge just to see what's new, but the part I'm really looking forward to at the moment is Module 1. Can't wait.
 
-[google]: https://en.wikipedia.org/wiki/Google "Wikipedia - Google"
-[altavista]: https://www.altavista.com/ "AltaVista"
+[google]: https://en.wikipedia.org/wiki/Google 'Wikipedia - Google'
+[altavista]: https://www.altavista.com/ 'AltaVista'
 [tc]: https://www.challenge.co
 [ustream]: https://www.ustream.tv/

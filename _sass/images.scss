@@ -1,25 +1,19 @@
-.gallery
-{
-    text-align: center;
+.gallery {
+  text-align: center;
 
-    img
-    {
-        margin: 2px;
-    }
+  img {
+    margin: 2px;
+  }
 
-    &.gallery-2
-    {
-        img
-        {
-            width: 45%;
-        }
+  &.gallery-2 {
+    img {
+      width: 45%;
     }
+  }
 
-    &.gallery-4
-    {
-        img
-        {
-            width: 20%;
-        }
+  &.gallery-4 {
+    img {
+      width: 20%;
     }
+  }
 }

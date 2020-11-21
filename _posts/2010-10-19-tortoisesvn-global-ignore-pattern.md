@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TortoiseSVN Global Ignore Pattern"
+title: 'TortoiseSVN Global Ignore Pattern'
 date: 2010-10-19
 comments: true
 categories: [svn]

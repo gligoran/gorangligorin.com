@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Time Is a Perspective"
+title: 'Time Is a Perspective'
 date: 2010-10-15
 comments: true
 categories: [thoughts]

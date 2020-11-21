@@ -1,51 +1,43 @@
-html
-{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width: 360px;
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
 }
 
-body
-{
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
-    font-weight: 300;
-    font-size: 13px;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 13px;
 }
 
-.inner
-{
-    width: 1000px;
-    margin: 0 auto;
+.inner {
+  width: 1000px;
+  margin: 0 auto;
 
-    @media screen and (max-width: 1040px)
-    {
-        width: 100%;
-    }
+  @media screen and (max-width: 1040px) {
+    width: 100%;
+  }
 }
 
-h1
-{
-    font-size: 1.8em;
+h1 {
+  font-size: 1.8em;
 }
 
-h2
-{
-    font-size: 1.5em;
+h2 {
+  font-size: 1.5em;
 }
 
-h3
-{
-    font-size: 1.3em;
+h3 {
+  font-size: 1.3em;
 }
 
-a
-{
-    text-decoration: none;
-    outline-width: 0;
-    color: $primary-color;
+a {
+  text-decoration: none;
+  outline-width: 0;
+  color: $primary-color;
 }

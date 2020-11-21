@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jogging, Week 2"
+title: 'Jogging, Week 2'
 date: 2010-08-09
 comments: true
 categories: [sports]
@@ -30,4 +30,4 @@ Sunday was a day off as well except this time I didn't do any other physical act
 
 As I achieved my goal on Wednesday I had to come up with something new to jog to :wink:. Next logical step would probably be to try and get at least 2 whole laps in the same week and then build on that number until I can jog the whole lap each day of the week. I'll be going back to Ljubljana soon though as my exams are getting closer. I have to find a similarly long lap there. It probably won't be a perfect match but I'll do my best. Oh, and I'm switching back to jogging after I wake up.
 
-[jogging-week1]: /blog/jogging-week-1 "Jogging, Week 1"
+[jogging-week1]: /blog/jogging-week-1 'Jogging, Week 1'

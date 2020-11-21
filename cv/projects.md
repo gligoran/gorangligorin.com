@@ -14,8 +14,8 @@ My personal website and the site you're on right now. The present version is the
 ![GoranGligorin.com (Version 1)][img-ggcom]
 
 {:.muted .small}
-Skills used (V1): *ASP.NET MVC 3, HTML5, CSS3, LESS, jQuery, Microformats* <br />
-Skills used (V2): *Jekyll, HTML5, CSS3, SCSS, Markdown*
+Skills used (V1): _ASP.NET MVC 3, HTML5, CSS3, LESS, jQuery, Microformats_ <br />
+Skills used (V2): _Jekyll, HTML5, CSS3, SCSS, Markdown_
 
 ## NicheCove.com
 
@@ -27,10 +27,10 @@ Niche Cove was my venture into internet marketing blogging. It was focused on cr
 ![Niche Cove][img-nc]
 
 {:.muted}
-*NOTE: The website is currently down because of hosting issues.*
+_NOTE: The website is currently down because of hosting issues._
 
 {:.muted .small .small}
-Skills used: *WordPress, Adobe Photoshop, SEO, Amazon Associates, ClickBank*
+Skills used: _WordPress, Adobe Photoshop, SEO, Amazon Associates, ClickBank_
 
 ## PiStats
 
@@ -44,7 +44,7 @@ January 2013
 While new data is no longer being collected, the presentation layer of the project can still be found [here][pistats].
 
 {:.muted .small}
-Skills used: *ASP.NET MVC 4, SQL, HTML5, CSS3 (LESS), Bootstrap, jQuery, Bash*
+Skills used: _ASP.NET MVC 4, SQL, HTML5, CSS3 (LESS), Bootstrap, jQuery, Bash_
 
 [img-ggcom]: /images/cv/gorangligorin.com.png
 [img-nc]: /images/cv/nichecove.png

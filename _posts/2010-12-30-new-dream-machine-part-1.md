@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New (Dream) Machine (Part 1)"
+title: 'New (Dream) Machine (Part 1)'
 date: 2010-12-30
 comments: true
 categories: [tech]

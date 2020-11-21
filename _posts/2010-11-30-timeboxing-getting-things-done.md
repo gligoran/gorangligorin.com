@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Timeboxing - Getting Things Done"
+title: 'Timeboxing - Getting Things Done'
 date: 2010-11-30
 comments: true
 categories: [thoughts]
@@ -12,7 +12,7 @@ On the 13th of December I'll have my penultimate exam. It's nothing I'll be look
 
 As you can see I have my goal set and the reward for completing it is very compelling. This keeps me somewhat motivated. The problem isn't the reward though. It's that it is far away. 2 weeks can be a long time. If you've read my post [Time is a Perspective][pers] you should understand that 2 weeks with so much things to learn can seem like at least a few months. This is way the ultimate reward of being school free has a very limited motivational value.
 
-To make studying an easier job I needed to find a way of getting more motivation. I found it while reading a great article my friend suggested - [Steve Pavlina's *Overcoming Procrastination*][sp2]*. In section *6. Poor Time Management Habits* he suggest an idea he calls **timeboxing**. You can read more about it in his [article][sp], but the main idea is to take a fixed amount of time and make yourself do something for the duration of it. After you're done, you reward yourself. For example I made myself write for 30 minutes and then I rewarded myself by watching an episode of House. I've tested it with studying and it works quite well. I did come up with a few variations though. They depend on the type of the task you want to do and how much time can you allocate for rewards.
+To make studying an easier job I needed to find a way of getting more motivation. I found it while reading a great article my friend suggested - [Steve Pavlina's _Overcoming Procrastination_][sp2]. In section *6. Poor Time Management Habits* he suggest an idea he calls **timeboxing**. You can read more about it in his [article][sp], but the main idea is to take a fixed amount of time and make yourself do something for the duration of it. After you're done, you reward yourself. For example I made myself write for 30 minutes and then I rewarded myself by watching an episode of House. I've tested it with studying and it works quite well. I did come up with a few variations though. They depend on the type of the task you want to do and how much time can you allocate for rewards.
 
 ## Closed and open ended time frames
 
@@ -32,7 +32,7 @@ I also like to employ a technique I call **progressive timeboxing**. What I do i
 
 Timeboxing can be a very effective motivational tool when used correctly. By completing a session you also get a sense of achievement which boosts your motivation even further. I suggest you try it out and see if it suits you. I would of course like to hear what success you've reached while employing this technique. And if you came up with your own derivation of it don't feel hesitant to share :smiley:
 
-[img]: /images/timeboxing.jpg "Timeboxing"
-[sp]: https://www.stevepavlina.com/blog/2004/10/timeboxing/ "Timeboxing"
-[pers]: /blog/time-is-a-perspective "Time Is a Perspective"
-[sp2]: https://www.stevepavlina.com/articles/overcoming-procrastination.htm "Overcoming Procrastination"
+[img]: /images/timeboxing.jpg 'Timeboxing'
+[sp]: https://www.stevepavlina.com/blog/2004/10/timeboxing/ 'Timeboxing'
+[pers]: /blog/time-is-a-perspective 'Time Is a Perspective'
+[sp2]: https://www.stevepavlina.com/articles/overcoming-procrastination.htm 'Overcoming Procrastination'

@@ -7,7 +7,7 @@ kramdown:
   hard_wrap: false
 
 paginate: 4
-paginate_path: "/blog/page/:num/"
+paginate_path: '/blog/page/:num/'
 comments: true
 
 source: .
@@ -42,25 +42,25 @@ exclude:
   - CNAME
 
 # seo settings
-title: "Goran Gligorin"
+title: 'Goran Gligorin'
 email: goran@gligorin.com
 description: "Goran Gligorin's little piece of the Internet"
-keywords: "goran gligorin, goran, gligorin, blog, cv, curriculum vitae, developer, web developer, c# developer, .net developer, entrepreneur"
+keywords: 'goran gligorin, goran, gligorin, blog, cv, curriculum vitae, developer, web developer, c# developer, .net developer, entrepreneur'
 url: https://www.gorangligorin.com
-baseurl: ""
+baseurl: ''
 twitter_username: jekyllrb
 github_username: jekyll
 
 google_analytics_tracking_id: UA-9914927-3
 # repo: https://github.com/gligoran/gorangligorin.com
-disqus_short_name: "gorangligorin"
+disqus_short_name: 'gorangligorin'
 disqus_show_comment_count: true
 
 # author settings
 author:
   name: Goran Gligorin
-  ima: "web developer, internet marketer, online entrepreneur, go-kart racer &amp; runner"
-  bio: "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
+  ima: 'web developer, internet marketer, online entrepreneur, go-kart racer &amp; runner'
+  bio: 'Enthusiast performance, responsive design and usability, always looking for the best project and good coffee.'
   # image: https://2.gravatar.com/avatar/9779eebf2a998acf07d40665c0dbbaf3?s=240
   image: /images/gorangligorin-2.png
   birthdate: 1986-09-24

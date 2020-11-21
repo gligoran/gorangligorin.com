@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Samsung Galaxy S2"
+title: 'Samsung Galaxy S2'
 date: 2011-07-29
 comments: true
 categories: [tech]
@@ -16,4 +16,4 @@ I'm really happy with for now, although I've still got a lot of apps to find and
 
 So I guess I'm done for now.
 
-[sgs2]: /images/sgs2.jpg "Samsung Galaxy S2"
+[sgs2]: /images/sgs2.jpg 'Samsung Galaxy S2'

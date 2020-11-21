@@ -1,231 +1,203 @@
-@import "variables.scss";
+@import 'variables.scss';
 
-#sidebar
-{
-    width: $sidebar-width;
-    position: fixed;
+#sidebar {
+  width: $sidebar-width;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: $sidebar-padding;
+  background: $sidebar-background;
+  z-index: 2;
+  background-size: cover;
+  background-position: 33%;
+  background-repeat: no-repeat;
+  background-image: url('/images/background/san-gimignano.jpg');
+
+  .overlay {
+    position: absolute;
     top: 0;
     bottom: 0;
+    right: 0;
     left: 0;
-    padding: $sidebar-padding;
-    background: $sidebar-background;
-    z-index: 2;
-    background-size: cover;
-    background-position: 33%;
-    background-repeat: no-repeat;
-    background-image: url("/images/background/san-gimignano.jpg");
+    background-image: linear-gradient(
+      140deg,
+      rgba(68, 68, 68, 0.4) 20%,
+      rgba(0, 0, 0, 0.4)
+    );
+    z-index: -2;
+  }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-image: linear-gradient(140deg,rgba(68, 68, 68, 0.4) 20%, rgba(0, 0, 0, 0.4));
-        z-index: -2;
+  @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+    position: relative;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    padding: $sidebar-padding / 2;
+  }
+
+  header {
+    line-height: 30px;
+    width: 100%;
+
+    @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+      padding: 0;
+      text-align: center;
     }
 
-    @media screen and (max-width: $layout-breakpoint-sm - 1px)
-    {
+    .profilepic {
+      box-shadow: inset 0 0 12px black;
+      border-radius: 50%;
+      width: 64%;
+      max-width: $sidebar-width;
+
+      @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+        margin: 0 auto;
+        max-width: 120px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xs - 1px) {
+        margin: 0 auto;
+        max-width: 80px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        border-radius: 50%;
         position: relative;
-        top: unset;
-        bottom: unset;
-        left: unset;
-        width: 100%;
-        padding: $sidebar-padding / 2;
+        z-index: -1;
+      }
     }
 
-    header
-    {
-        line-height: 30px;
-        width: 100%;
+    a {
+      color: #ddd;
 
-        @media screen and (max-width: $layout-breakpoint-sm - 1px)
-        {
-            padding: 0;
-            text-align: center;
+      &:hover {
+        color: black;
+      }
+    }
+
+    .title {
+      font-family: 'Open Sans';
+      font-weight: 800;
+      font-size: 4em;
+      line-height: 1;
+      margin: 0;
+      color: #fff;
+
+      @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+        font-size: 2.4em;
+        margin: 0;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xs - 1px) {
+        font-size: 2em;
+        margin: 0;
+      }
+    }
+
+    .subtitle {
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-size: 1.24em;
+      line-height: 1.24em;
+      font-weight: normal;
+      color: #ddd;
+      margin: 15px 0;
+
+      @media screen and (max-width: $layout-breakpoint-xs - 1px) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .navi {
+    text-align: center;
+    z-index: 1;
+
+    @media screen and (min-width: $layout-breakpoint-sm) {
+      text-align: left;
+      position: fixed;
+      bottom: 20px;
+    }
+
+    #main-nav {
+      //margin: 0 auto;
+      margin-top: 20px;
+      font-size: 1.5em;
+      font-family: 'Open Sans';
+
+      @media screen and (min-width: $layout-breakpoint-sm) {
+        left: 20px;
+      }
+
+      @media screen and (max-width: $layout-breakpoint-xs - 1px) {
+        font-size: 13px;
+        margin-top: 0;
+      }
+
+      ul {
+        padding: 0;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+          display: block;
         }
 
-        .profilepic
-        {
-            box-shadow: inset 0 0 12px black;
-            border-radius: 50%;
-            width: 64%;
-            max-width: $sidebar-width;
+        li {
+          display: block;
+          margin: 0;
 
-            @media screen and (max-width: $layout-breakpoint-sm - 1px)
-            {
-                margin: 0 auto;
-                max-width: 120px;
+          @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+            display: inline-block;
+            margin: 3px 0;
+          }
+
+          a {
+            color: #bbb;
+
+            @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+              display: inline-block;
+              border: 1px solid white;
+              padding: 0 10px;
+              font-size: 13px;
+              line-height: 2em;
+              font-weight: normal;
+              color: white;
+              border-radius: 16px;
             }
 
-            @media screen and (max-width: $layout-breakpoint-xs - 1px)
-            {
-                margin: 0 auto;
-                max-width: 80px;
-            }
+            &:hover {
+              color: white;
 
-            img
-            {
-                display: block;
-                width: 100%;
-                border-radius: 50%;
-                position: relative;
-                z-index: -1;
-            }
-        }
-
-        a
-        {
-            color: #ddd;
-
-            &:hover
-            {
+              @media screen and (max-width: $layout-breakpoint-sm - 1px) {
                 color: black;
+                background: white;
+              }
             }
+          }
         }
-
-        .title
-        {
-            font-family: "Open Sans";
-            font-weight: 800;
-            font-size: 4em;
-            line-height: 1;
-            margin: 0;
-            color: #fff;
-
-            @media screen and (max-width: $layout-breakpoint-sm - 1px)
-            {
-                font-size: 2.4em;
-                margin: 0;
-            }
-
-            @media screen and (max-width: $layout-breakpoint-xs - 1px)
-            {
-                font-size: 2em;
-                margin: 0;
-            }
-        }
-
-        .subtitle
-        {
-            font-family: "Open Sans";
-            font-style: italic;
-            font-size: 1.24em;
-            line-height: 1.24em;
-            font-weight: normal;
-            color: #ddd;
-            margin: 15px 0;
-
-            @media screen and (max-width: $layout-breakpoint-xs - 1px)
-            {
-                font-size: 13px;
-            }
-        }
+      }
     }
 
-    .navi
-    {
-        text-align: center;
-        z-index: 1;
+    #sub-nav {
+      margin-top: 10px;
 
-        @media screen and (min-width: $layout-breakpoint-sm)
-        {
-            text-align: left;
-            position: fixed;
-            bottom: 20px;
+      @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+        margin-top: 0;
+        display: block;
+      }
+
+      .social {
+        display: inline-block;
+        margin: 0;
+
+        a {
+          margin: 0;
         }
-
-        #main-nav
-        {
-            //margin: 0 auto;
-            margin-top: 20px;
-            font-size: 1.5em;
-            font-family: "Open Sans";
-
-            @media screen and (min-width: $layout-breakpoint-sm)
-            {
-                left: 20px;
-            }
-
-            @media screen and (max-width: $layout-breakpoint-xs - 1px)
-            {
-                font-size: 13px;
-                margin-top: 0;
-            }
-
-            ul
-            {
-                padding: 0;
-                margin-bottom: 10px;
-
-                @media screen and (max-width: $layout-breakpoint-sm - 1px)
-                {
-                    display: block;
-                }
-
-                li
-                {
-                    display: block;
-                    margin: 0;
-
-                    @media screen and (max-width: $layout-breakpoint-sm - 1px)
-                    {
-                        display: inline-block;
-                        margin: 3px 0;
-                    }
-
-                    a
-                    {
-                        color: #bbb;
-
-                        @media screen and (max-width: $layout-breakpoint-sm - 1px)
-                        {
-                            display: inline-block;
-                            border: 1px solid white;
-                            padding: 0 10px;
-                            font-size: 13px;
-                            line-height: 2em;
-                            font-weight: normal;
-                            color: white;
-                            border-radius: 16px;
-                        }
-
-                        &:hover
-                        {
-                            color: white;
-
-                            @media screen and (max-width: $layout-breakpoint-sm - 1px)
-                            {
-                                color: black;
-                                background: white;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        #sub-nav
-        {
-            margin-top: 10px;
-
-            @media screen and (max-width: $layout-breakpoint-sm - 1px)
-            {
-                margin-top: 0;
-                display: block;
-            }
-
-            .social
-            {
-                display: inline-block;
-                margin: 0;
-
-                a
-                {
-                    margin: 0;
-                }
-            }
-        }
+      }
     }
+  }
 }

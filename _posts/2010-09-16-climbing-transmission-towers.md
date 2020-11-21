@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Climbing Transmission Towers"
+title: 'Climbing Transmission Towers'
 date: 2010-09-16
 comments: true
 categories: [videos]

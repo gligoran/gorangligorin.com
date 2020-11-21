@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Brand New Start"
+title: 'A Brand New Start'
 date: 2010-09-28
 comments: true
 categories: [personal, goals]
@@ -22,4 +22,4 @@ I've been waiting for this moment for a long time now and a have quite a few thi
 
 Well this may seem like a lot, but if I organize myself I should have more then enough time to fit it all in. I think :smiley:
 
-[img]: /images/early-morning.jpg "Early morning"
+[img]: /images/early-morning.jpg 'Early morning'

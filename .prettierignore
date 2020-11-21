@@ -1,0 +1,8 @@
+.vscode/
+
+# jekyll
+.jekyll-cache
+_site
+
+# liquid not supported
+*.html

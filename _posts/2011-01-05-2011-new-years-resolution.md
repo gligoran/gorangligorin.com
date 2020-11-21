@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2011 New Years Resolution"
+title: '2011 New Years Resolution'
 date: 2011-01-05
 comments: true
 categories: [goals]
@@ -30,5 +30,5 @@ There you go. Seems a lot to do, eh? Well it probably is. But I'll give it my be
 Well that's that. Wish me luck and if you have any New Year's resolutions yourself, share them in the comments.
 
 [img]: /images/new-years-resolutions-2011.jpg
-[mvcopenid]: /blog/mvcopenid-open-source-openid-starter-kit-for-asp-net-mvc "MvcOpenID - Open Source OpenID Starter Kit for ASP.NET MVC"
-[blame]: https://online.wsj.com/article/SB10001424052748703478704574612052322122442.html#articleTabs%3Darticle "Blame It On the Brain"
+[mvcopenid]: /blog/mvcopenid-open-source-openid-starter-kit-for-asp-net-mvc 'MvcOpenID - Open Source OpenID Starter Kit for ASP.NET MVC'
+[blame]: https://online.wsj.com/article/SB10001424052748703478704574612052322122442.html#articleTabs%3Darticle 'Blame It On the Brain'

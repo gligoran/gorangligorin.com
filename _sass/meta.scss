@@ -1,58 +1,51 @@
-@import "variables";
+@import 'variables';
 
-.meta
-{
-    margin-left: 4px;
+.meta {
+  margin-left: 4px;
+  color: #999;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 1.2em;
+
+  @media screen and (max-width: $layout-breakpoint-sm - 1px) {
+    font-size: 0.9em;
+  }
+
+  a {
     color: #999;
-    font-family: "Open Sans";
-    font-weight: 100;
-    font-size: 1.2em;
 
-    @media screen and (max-width: $layout-breakpoint-sm - 1px)
-    {
-        font-size: 0.9em;
+    &:hover {
+      color: #666;
     }
+  }
 
-    a
-    {
-        color: #999;
+  .date,
+  .tags,
+  .comments,
+  .edit {
+    padding-right: 10px;
 
-        &:hover
-        {
-            color: #666;
-        }
+    &:before {
+      color: #ccc;
+      font: 1.3em FontAwesome;
+      left: 0;
+      margin-right: 5px;
     }
+  }
 
-    .date, .tags, .comments, .edit
-    {
-        padding-right: 10px;
+  .date:before {
+    content: '\f073';
+  }
 
-        &:before
-        {
-            color: #ccc;
-            font: 1.3em FontAwesome;
-            left: 0;
-            margin-right: 5px;
-        }
-    }
+  .tags:before {
+    content: '\f02c';
+  }
 
-    .date:before
-    {
-        content: "\f073";
-    }
+  .comments:before {
+    content: '\f075';
+  }
 
-    .tags:before
-    {
-        content: "\f02c";
-    }
-
-    .comments:before
-    {
-        content: "\f075";
-    }
-
-    .edit:before
-    {
-        content: "\f044";
-    }
+  .edit:before {
+    content: '\f044';
+  }
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mercurial (Hg) and Git Global Ignore Files for Windows"
+title: 'Mercurial (Hg) and Git Global Ignore Files for Windows'
 date: 2010-10-20
 comments: true
 categories: [git, mercurial]

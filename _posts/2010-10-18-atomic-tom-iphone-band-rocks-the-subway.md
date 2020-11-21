@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Atomic Tom - iPhone Band Rocks the Subway"
+title: 'Atomic Tom - iPhone Band Rocks the Subway'
 date: 2010-10-18
 comments: true
 categories: [music]

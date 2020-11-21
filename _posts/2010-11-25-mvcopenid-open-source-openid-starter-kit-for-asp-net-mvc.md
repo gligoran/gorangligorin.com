@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MvcOpenID - Open Source OpenID Starter Kit for ASP.NET MVC"
+title: 'MvcOpenID - Open Source OpenID Starter Kit for ASP.NET MVC'
 date: 2010-11-25
 comments: true
 categories: [aspnet-mvc, openid]
@@ -26,10 +26,10 @@ That was pretty much it for last week. If you'd like to check out the project it
 
 Check the project out and I hope you like it. Any feedback I can get is of course very welcome.
 
-[img]: /images/mvcopenid-productivity.png "Productivity Week 3 November 2010"
-[dotnetopenauth]: https://www.dotnetopenauth.net "DotNetOpenAuth"
-[aa]: https://blog.nerdbank.net/ "Andrew Arnott"
-[pick]: https://www.codinghorror.com/blog/2007/04/pick-a-license-any-license.html "Jeff Atwood, Pick a License, Any License"
-[cp]: https://mvcopenid.codeplex.com/ "MvcOpenID on CodePlex"
-[gh]: https://github.com/gligoran/mvcopenid "MvcOpenID on GitHub"
-[ohloh]: https://www.ohloh.net/p/mvcopenid "MvcOpenID on Ohloh"
+[img]: /images/mvcopenid-productivity.png 'Productivity Week 3 November 2010'
+[dotnetopenauth]: https://www.dotnetopenauth.net 'DotNetOpenAuth'
+[aa]: https://blog.nerdbank.net/ 'Andrew Arnott'
+[pick]: https://www.codinghorror.com/blog/2007/04/pick-a-license-any-license.html 'Jeff Atwood, Pick a License, Any License'
+[cp]: https://mvcopenid.codeplex.com/ 'MvcOpenID on CodePlex'
+[gh]: https://github.com/gligoran/mvcopenid 'MvcOpenID on GitHub'
+[ohloh]: https://www.ohloh.net/p/mvcopenid 'MvcOpenID on Ohloh'

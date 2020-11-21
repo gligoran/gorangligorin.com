@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Jogging, Week 1"
+title: 'Jogging, Week 1'
 date: 2010-08-03
 comments: true
 categories: [sports]

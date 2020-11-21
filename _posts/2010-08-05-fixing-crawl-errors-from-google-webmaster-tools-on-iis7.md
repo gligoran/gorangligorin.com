@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fixing Crawl Errors From Google Webmaster Tools on IIS7"
+title: 'Fixing Crawl Errors From Google Webmaster Tools on IIS7'
 date: 2010-08-05
 comments: true
 categories: [iis]
@@ -64,9 +64,9 @@ Let's start with query string independent URLs. For this you'll need to use this
 </rule>
 ```
 
-As IIS7 does not allow multiple rules with the same name change the *`X`* in `GoneX` with some unique string. I usually use consecutive numbers (`Gone1`, `Gone2`, ...).
+As IIS7 does not allow multiple rules with the same name change the _`X`_ in `GoneX` with some unique string. I usually use consecutive numbers (`Gone1`, `Gone2`, ...).
 
-You'll also need to replace *`URL`* with the URL you got from Crawl Errors report without the domain part. So if you look back at the second example you'll only need the `long-jeans/` part.
+You'll also need to replace _`URL`_ with the URL you got from Crawl Errors report without the domain part. So if you look back at the second example you'll only need the `long-jeans/` part.
 
 As rewrite rules use [regular expressions][regex] for matching URLs you'll need to be mindful of a couple of thing:
 
@@ -107,7 +107,7 @@ Place this rule anywhere amongst your previous rules. You'll notice the `.*` in 
 <add input="{QUERY_STRING}" pattern="QUERYSTRING" />
 ```
 
-Now all you have to do is to replace the *`QUERYSTRING`* in the `pattern` attribute with the query string from your URL and insert the condition in the above rule. Don't forget about escaping the query string. You can have as many conditions as you want inside this rule. If any of these conditions match the query string of the URL request received by your web server it will fire up the action the return a 410 HTTP status code.
+Now all you have to do is to replace the _`QUERYSTRING`_ in the `pattern` attribute with the query string from your URL and insert the condition in the above rule. Don't forget about escaping the query string. You can have as many conditions as you want inside this rule. If any of these conditions match the query string of the URL request received by your web server it will fire up the action the return a 410 HTTP status code.
 
 ## 301 - Moved permanently
 
@@ -119,7 +119,7 @@ The difference between a 410 and a 301 rule in your web.config is in the `action
 <action type="Redirect" url="NEWURL" />
 ```
 
-You'll need to change *`NEWURL`* with the URL that you want the old URL to be pointing at. The new URL must be a full URL. So let's look at the example where `www.example.com/old/` is redirected to `www.example.com/new/`:
+You'll need to change _`NEWURL`_ with the URL that you want the old URL to be pointing at. The new URL must be a full URL. So let's look at the example where `www.example.com/old/` is redirected to `www.example.com/new/`:
 
 ```xml
 <rule name="Moved1" stopProcessing="true">
@@ -140,14 +140,14 @@ Googlebot will see these changes the next time it crawls your URLs and according
 
 As 410 is stronger then 404 your 410s should start disappearing from the Crawl Errors report over time. The URLs you redirected with a 301 should disappear faster.
 
-*For more information on creating rewrite rules go to [Creating Rewrite Rules for the URL Rewrite Module][rw-rules].*
+_For more information on creating rewrite rules go to [Creating Rewrite Rules for the URL Rewrite Module][rw-rules]._
 
-*For testing your Regular Expression you can use [Regular Expression Test Tool][regex-test].*
+_For testing your Regular Expression you can use [Regular Expression Test Tool][regex-test]._
 
-[gwt]: https://www.google.com/webmasters/tools/ "Google Webmaster Tools"
+[gwt]: https://www.google.com/webmasters/tools/ 'Google Webmaster Tools'
 [gb-fetch]: https://www.google.com/support/webmasters/bin/answer.py?answer=158587
-[http-codes]: https://www.google.com/support/webmasters/bin/answer.py?answer=40132 "HTTP status codes"
-[query]: https://en.wikipedia.org/wiki/Query_string "Query string"
+[http-codes]: https://www.google.com/support/webmasters/bin/answer.py?answer=40132 'HTTP status codes'
+[query]: https://en.wikipedia.org/wiki/Query_string 'Query string'
 [regex]: https://en.wikipedia.org/wiki/Regular_expression
 [url-removal]: https://googlewebmastercentral.blogspot.com/2010/05/url-removal-explained-part-iv-tracking.html
 [rw-rules]: https://learn.iis.net/page.aspx/461/creating-rewrite-rules-for-the-url-rewrite-module/

@@ -14,7 +14,7 @@ May 2016 - Present
 At D.Labs I've worked on a number of projects for our biggest client - Business of Fashion. These projects included BoF Education, an online course platform, BoF Professional, a content subscription platform, hybrid mobile app for iOS, and BoF Community. During this time I've used various programming languages like JavaScript, TypeScript, HTML, (S)CSS, Twig, and technologies like AngularJS, Angular (2, 4, 5, and 6), Ionic 2, Angular Material, Twitter Bootstrap (3 and 4), gulp, webpack, git, npm, docker, REST, GraphQL + Apollo, and many others.
 
 {:.muted .small}
-Skills used: *JavaScript, TypeScript, HTML5, CSS3, SCSS, AngularJS, Angular 2 - 6, Bootstrap, Angular Material, git, npm, bower, gulp, webpack, docker*
+Skills used: _JavaScript, TypeScript, HTML5, CSS3, SCSS, AngularJS, Angular 2 - 6, Bootstrap, Angular Material, git, npm, bower, gulp, webpack, docker_
 
 ## Creator and Developer
 
@@ -32,7 +32,7 @@ The entire solution is being developed using Visual Studio 2015 and tools like n
 Both Empire24.co and Linkr are hosted on Microsoft Azure as Websites and use Azure SQL for data storage. Git is used for source code management following the Git Flow principles. Continuous integration is done using Visual Studio Online (Team Services).
 
 {:.muted .small}
-Skills used: *C#, .NET Framework, HTML5, CSS3, SCSS, AngularJS, JavaScript, Entity Framework Code-First, Microsoft Azure Websites, Visual Studio Online Continuous Integration, npm, bower, gulp*
+Skills used: _C#, .NET Framework, HTML5, CSS3, SCSS, AngularJS, JavaScript, Entity Framework Code-First, Microsoft Azure Websites, Visual Studio Online Continuous Integration, npm, bower, gulp_
 
 ## Microsoft Dynamics NAV Developer
 
@@ -51,7 +51,7 @@ I was also a part of Adacta's support team for existing clients. I helped them w
 At my position I also learned a lot about how ERPs function in real-life environments.
 
 {:.muted .small}
-Skills used: *Microsoft Dynamics NAV (2.0 - 2013), SQL Server Management Studio, .NET Framework, C#*
+Skills used: _Microsoft Dynamics NAV (2.0 - 2013), SQL Server Management Studio, .NET Framework, C#_
 
 ## Joomla Web Developer
 
@@ -66,7 +66,7 @@ Slovenia
 I was contracted by the Faculty of Natural Sciences and Mathematics in Maribor to develop an abstract submission system for the [European Conference on Liquid Crystals 2011][eclc2011]. They had already set up a Joomla-based website, so I developed a 2-part plugin. The main part was completed by June 2010, but by request I implemented some additional features.
 
 {:.muted .small}
-Skills used: *Joomla, PHP, MySQL, (X)HTML, CSS*
+Skills used: _Joomla, PHP, MySQL, (X)HTML, CSS_
 
 ## PHP Web Developer
 
@@ -83,7 +83,7 @@ My main task was taking a design created in Photoshop and making it into a worki
 My other tasks included repair and maintenance of previously built web sites, such as on-site SEO optimization and further development of the in-house CMS.
 
 {:.muted .small}
-Skills used: *(X)HTML, CSS, JavaScript, jQuery, PHP, MySQL*
+Skills used: _(X)HTML, CSS, JavaScript, jQuery, PHP, MySQL_
 
 ## .NET Developer
 
@@ -98,7 +98,7 @@ Slovenia
 I was a C# developer using .NET framework 2.0 and Visual Studio 2003 and 2005. I worked in a team environment on business Windows and ASP.NET Web Applications. These applications where usually custom information systems for specific customers. All of these applications used SQL Server databases.
 
 {:.muted .small}
-Skills used: *C#, .NET Framework, ASP.NET, MSSQL, Visual Studio, VSS*
+Skills used: _C#, .NET Framework, ASP.NET, MSSQL, Visual Studio, VSS_
 
 ## Web Developer
 
@@ -113,7 +113,7 @@ Slovenia
 As part of the school's computer lab team I co-developed and then helped maintain the school website.
 
 {:.muted .small}
-Skills used: *(X)HTML, CSS, JavaScript*
+Skills used: _(X)HTML, CSS, JavaScript_
 
 [dlabs]: https://dlabs.si
 [empire24]: https://empire24.co
