@@ -6,7 +6,7 @@ comments: false
 
 Hello there! Thanks for trying to reach out to me. My preferred method of communication is email. If you'd like to talk to me over the phone or skype, please send me an email first.
 
-<form id="contact" action="//formspree.io/goran@gligorin.com" method="POST">
+<form id="contact" action="https://formspree.io/goran@gligorin.com" method="POST">
     <input type="text" name="name" placeholder="Name">
     <input type="email" name="email" placeholder="Email">
     <textarea name="message" placeholder="Your message" rows="5"></textarea>

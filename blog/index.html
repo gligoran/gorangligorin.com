@@ -17,14 +17,14 @@ title: Blog
 <div id="pagination">
   <div class="link link--previous">
     {% if paginator.previous_page %}
-    <i class="fa fa-arrow-left"></i>
+    <i class="fas fa-arrow-left"></i>
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | replace: 'index.html', '' }}">Previous page</a>
     {% endif %}
   </div>
   <div class="link link--next">
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next page</a>
-      <i class="fa fa-arrow-right"></i>
+      <i class="fas fa-arrow-right"></i>
     {% endif %}
   </div>
 </nav>
