@@ -8,3 +8,7 @@ _site
 # node
 node_modules
 
+# workers sites
+workers-site/node_modules
+workers-site/worker
+dist

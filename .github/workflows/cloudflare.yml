@@ -1,4 +1,4 @@
-name: jekyll
+name: cloudflare
 
 on: push
 
@@ -37,12 +37,6 @@ jobs:
 
       - name: deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: cloudflare/wrangler-action@1.2.0
         with:
-          target_branch: history
-          build_dir: _site
-          keep_history: true
-          allow_empty_commit: false
-          commit_message: ${{ github.event.head_commit.message }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          apiToken: ${{ secrets.CF_API_TOKEN }}

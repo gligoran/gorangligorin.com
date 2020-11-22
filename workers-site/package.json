@@ -1,0 +1,12 @@
+{
+  "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com/)",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "~0.0.11"
+  },
+  "description": "gorangligorin.com",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "gorangligorin.com-worker",
+  "private": true,
+  "version": "1.0.0"
+}

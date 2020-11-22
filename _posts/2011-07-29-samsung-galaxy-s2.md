@@ -5,7 +5,7 @@ date: 2011-07-29
 comments: true
 categories: [tech]
 redirect_from:
-  - /blog/android.html
+  - /blog/android
 ---
 
 ![Samsung Galaxy S2][sgs2]

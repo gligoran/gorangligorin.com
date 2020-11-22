@@ -4,5 +4,9 @@
 .jekyll-cache
 _site
 
+# cloudflare workers
+dist/
+workers-site/worker/
+
 # liquid not supported
 *.html
