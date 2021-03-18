@@ -4,20 +4,22 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-    time: "04:00"
   open-pull-requests-limit: 10
-- package-ecosystem: bundler
-  directory: "/"
-  schedule:
-    interval: daily
-    time: "04:00"
-  open-pull-requests-limit: 10
-  allow:
-  - dependency-type: direct
-  - dependency-type: indirect
+
 - package-ecosystem: npm
   directory: "/workers-site"
   schedule:
     interval: daily
-    time: "04:00"
+  open-pull-requests-limit: 10
+
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
   open-pull-requests-limit: 10
