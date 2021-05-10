@@ -7,7 +7,7 @@
   "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
   "devDependencies": {
     "@cloudflare/wrangler": "1.16.1",
-    "prettier": "2.2.1"
+    "prettier": "2.3.0"
   },
   "homepage": "https://www.gorangligorin.com",
   "license": "ISC",
