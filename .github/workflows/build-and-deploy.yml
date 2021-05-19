@@ -17,7 +17,7 @@ jobs:
         run: bundle exec jekyll build
 
       - name: check links
-        run: bundle exec htmlproofer --external-only --only-4xx --check-favicon --check-html --url-ignore "https://kit.fontawesome.com/fe53b9ab7d.js,https://twitter.com/gligoran" ./_site
+        run: bundle exec htmlproofer --external-only --only-4xx --check-favicon --check-html --url-ignore "https://kit.fontawesome.com/fe53b9ab7d.js,https://twitter.com/gligoran,https://gorangligorin.disqus.com/count.js" ./_site
 
       - name: deploy
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
