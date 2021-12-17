@@ -6,7 +6,7 @@
   "dependencies": {},
   "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
   "devDependencies": {
-    "@cloudflare/wrangler": "1.19.5",
+    "@cloudflare/wrangler": "1.19.6",
     "prettier": "2.5.1"
   },
   "homepage": "https://www.gorangligorin.com",
