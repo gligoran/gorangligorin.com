@@ -1,7 +1,7 @@
 {
   "author": "Goran Gligorin <goran@gligorin.com> (https://www.gorangligorin.com/)",
   "dependencies": {
-    "@cloudflare/kv-asset-handler": "0.1.1"
+    "@cloudflare/kv-asset-handler": "0.2.0"
   },
   "description": "gorangligorin.com",
   "license": "ISC",
