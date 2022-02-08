@@ -3,10 +3,15 @@
   "bugs": {
     "url": "https://github.com/gligoran/gorangligorin.com/issues"
   },
-  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
   "devDependencies": {
-    "@cloudflare/wrangler": "1.19.7",
+    "@cloudflare/wrangler": "^1.19.8",
+    "cz-conventional-changelog": "^3.3.0",
     "prettier": "2.5.1"
   },
   "homepage": "https://www.gorangligorin.com",
@@ -26,5 +31,9 @@
     "start": "wrangler preview",
     "wipe": "rm -rf node_modules .jekyll-cache .sass-cache dist _site workers-site/node_modules workers-site/worker"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "volta": {
+    "node": "16.13.2",
+    "npm": "8.4.1"
+  }
 }
