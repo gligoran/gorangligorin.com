@@ -12,7 +12,7 @@
   "devDependencies": {
     "@cloudflare/wrangler": "^1.19.12",
     "cz-conventional-changelog": "^3.3.0",
-    "prettier": "2.6.2"
+    "prettier": "2.7.0"
   },
   "homepage": "https://www.gorangligorin.com",
   "license": "ISC",
