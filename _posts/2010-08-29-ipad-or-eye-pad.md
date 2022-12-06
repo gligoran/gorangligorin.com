@@ -10,6 +10,6 @@ categories: [jokes]
 
 How didn't I think of this <b>pun</b> before? It's brilliant :smiley:
 
-Source: <http://www.dixiworld.com/2010/03/breaking-apple-ipad-leaked-prototype/>
+Source: <https://www.dixiworld.com/2010/03/breaking-apple-ipad-leaked-prototype/>
 
 [img]: /images/apple-eye-pad.jpg 'Apple Eye Pad'
