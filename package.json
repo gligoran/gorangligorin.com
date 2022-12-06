@@ -10,9 +10,9 @@
   },
   "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
   "devDependencies": {
-    "@cloudflare/wrangler": "^1.20.0",
     "cz-conventional-changelog": "^3.3.0",
-    "prettier": "2.8.0"
+    "prettier": "2.8.0",
+    "wrangler": "^2.6.1"
   },
   "homepage": "https://www.gorangligorin.com",
   "license": "ISC",

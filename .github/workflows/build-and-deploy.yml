@@ -19,15 +19,17 @@ jobs:
       - name: check links
         run: bundle exec htmlproofer --only-4xx --no-enforce-https --ignore-urls "https://kit.fontawesome.com/fe53b9ab7d.js,https://twitter.com/gligoran,https://gorangligorin.disqus.com/count.js" ./_site
 
-      - name: deploy
+      - uses: cloudflare/pages-action@1
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: cloudflare/wrangler-action@2.0.0
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: cb7d4a209e211ccf250880761e0e9b7b
+          projectName: gorangligorin-com
+          directory: _site
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: push to history branch
+      - uses: crazy-max/ghaction-github-pages@v3.1.0
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: history
           build_dir: _site
