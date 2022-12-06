@@ -90,7 +90,7 @@ Skills used: _(X)HTML, CSS, JavaScript, jQuery, PHP, MySQL_
 {:.muted .timespan .small}
 August 2004 - January 2007
 
-**[Agito d.o.o.][agito]** <br />
+**Agito d.o.o. (now [Agitavit Solutions][agitavit])** <br />
 Tržaška 116 <br />
 1000 Ljubljana <br />
 Slovenia
@@ -122,5 +122,5 @@ Skills used: _(X)HTML, CSS, JavaScript_
 [fnm]: http://www.fnm.uni-mb.si/
 [eclc2011]: http://eclc2011.fnm.uni-mb.si/
 [plenum]: https://www.plenum.si/
-[agito]: http://www.agito.si/
-[gfml]: http://www.gfm-ljutomer.si/
+[agitavit]: https://www.agitavit.com/
+[gfml]: https://www.gfml.si/
