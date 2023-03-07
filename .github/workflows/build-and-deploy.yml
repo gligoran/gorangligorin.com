@@ -23,7 +23,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: cb7d4a209e211ccf250880761e0e9b7b
+          accountId: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           projectName: gorangligorin-com
           directory: _site
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
