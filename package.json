@@ -27,7 +27,7 @@
     "build": "bundle exec jekyll build",
     "format": "prettier --config .prettierrc --check .",
     "format:fix": "npm run format -- --write",
-    "publish": "wrangler publish",
+    "publish": "wrangler deploy",
     "start": "wrangler preview",
     "wipe": "rm -rf node_modules .jekyll-cache .sass-cache dist _site workers-site/node_modules workers-site/worker"
   },
