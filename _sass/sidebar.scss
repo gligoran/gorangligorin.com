@@ -34,7 +34,7 @@
     bottom: unset;
     left: unset;
     width: 100%;
-    padding: $sidebar-padding / 2;
+    padding: calc($sidebar-padding / 2);
   }
 
   header {
