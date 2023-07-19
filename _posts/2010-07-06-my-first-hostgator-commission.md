@@ -34,5 +34,5 @@ All in all I am extremely happy about my first few bucks earned online :smiley:
 [img-email-thumb]: /images/thumbs/hg-commission-email.png
 [img-email]: /images/hg-commission-email.png 'Email from PayPal'
 [aardvark]: https://vark.com/ 'Aardvark'
-[hg-paid]: https://support.hostgator.com/articles/affiliates/when-and-how-often-will-i-be-paid
+[hg-paid]: https://www.hostgator.com/help/article/when-and-how-often-will-i-be-paid
 [aspnet-mvc]: https://www.asp.net/mvc/ 'ASP.NET MVC Framework'
