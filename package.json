@@ -11,7 +11,7 @@
   "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
   "devDependencies": {
     "cz-conventional-changelog": "^3.3.0",
-    "prettier": "3.0.0",
+    "prettier": "3.0.1",
     "wrangler": "^3.3.0"
   },
   "homepage": "https://www.gorangligorin.com",
