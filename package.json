@@ -3,14 +3,8 @@
   "bugs": {
     "url": "https://github.com/gligoran/gorangligorin.com/issues"
   },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
   "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0",
     "prettier": "3.0.2",
     "wrangler": "^3.3.0"
   },
