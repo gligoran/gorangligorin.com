@@ -5,8 +5,8 @@
   },
   "description": "This is a website all about me: [https://www.gorangligorin.com](https://www.gorangligorin.com)",
   "devDependencies": {
-    "prettier": "3.2.2",
-    "wrangler": "^3.3.0"
+    "prettier": "3.7.4",
+    "wrangler": "^4.57.0"
   },
   "homepage": "https://www.gorangligorin.com",
   "license": "ISC",
@@ -27,7 +27,7 @@
   },
   "version": "1.0.0",
   "volta": {
-    "node": "20.11.0",
-    "npm": "10.3.0"
+    "node": "22.21.0",
+    "npm": "10.9.4"
   }
 }
