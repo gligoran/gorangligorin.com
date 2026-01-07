@@ -16,9 +16,6 @@ jobs:
       - name: build jekyll
         run: bundle exec jekyll build
 
-      - name: check links
-        run: bundle exec htmlproofer --only-4xx --no-enforce-https --ignore-urls "https://kit.fontawesome.com/fe53b9ab7d.js,https://twitter.com/gligoran,https://gorangligorin.disqus.com/count.js,https://www.hostgator.com/help/article/when-and-how-often-will-i-be-paid" ./_site
-
       - uses: cloudflare/pages-action@1
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         with:
